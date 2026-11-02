@@ -1,0 +1,1215 @@
+{
+  "schemaVersion": 1,
+  "title": "The Year Math Changed Forever",
+  "intro": "A.I. is solving problems that stumped the field for decades. Mathematicians look to Terence Tao for guidance on their altered world.",
+  "body": "A mathematician is a machine for turning coffee into theorems. This was a line often invoked by the Hungarian mathematician Paul Erdős, who was fuelled by coffee and amphetamines, slept little, travelled near-constantly, never married or had children, and published almost fifteen hundred papers in his lifetime, in collaboration with hundreds of other mathematicians. But Erdős was, in most ways, not machinelike. He called lecturing in mathematics “preaching,” woke friends at odd hours by asking, “Is your brain open?,” wore only silk underclothing on account of his sensitive skin, and claimed not to have learned how to butter toast until he was twenty-one. He gave away most of his earnings to charitable causes and to young mathematicians in need of funds for their education, and he offered bounties (sometimes ten dollars, sometimes a thousand) for solutions to mathematical problems he’d proposed. Mathematics was his life. Mathematicians were his family. It has been said that, even above his remarkable contributions to the mathematical literature, he helped the discipline most profoundly by turning people who might otherwise have become hedge-fund managers or F.B.I. agents or lost souls into mathematicians. When he died, in 1996, at the age of eighty-three, he left behind about a thousand problems. Solving an Erdős problem is a great honor, as is having a low “Erdős number,” a term that describes how many degrees of separation one is from having published work with him.\n\nTerence Tao was ten years old when Erdős visited his home town of Adelaide, Australia, in 1985. Erdős loved children and called them epsilons. Tao, a mathematics prodigy, had started taking college-level courses at age nine. Erdős posed a problem for him and Tao to work on together. A photograph of their meeting, taken by Tao’s mother (who had been a math teacher before having kids), shows the young mathematician and the old one deep in thought, hands at chins, looking at the notepad before them. “I wish I remembered more about the encounter,” Tao recently said. Erdős later sent the Tao family a note, handwritten on Bell Labs stationery, that, after brief wishes of a good New Year, reiterated the problem they had discussed: “Let 1 ≤ a ₁ < a ₂ <... a ₜₙ ≤ n be a sequence of integers...”\n\nIn May of 2023, the mathematician Thomas Bloom began gathering the known remaining unsolved Erdős problems on a website, erdosproblems.com. Their depth and difficulty vary, deliberately. Erdős described some of them as “marshmallows” and others as “acorns.” In a talk in February of this year, titled “Machine Assistance and the Future of Research Mathematics,” Tao quoted Erdős’s characterization of a marshmallow as “a tasty tidbit supplying a few moments of fleeting enjoyment,” and of an acorn as “requiring deep and subtle new insights from which a mighty oak can develop.”\n\nThe role that artificial intelligence will play in research mathematics has been talked about a fair amount in the past five years, and a fearsome, unbounded amount in the past five months. Tao—a professor of mathematics at the University of California, Los Angeles, and a founder, in 2025, of the Foundation for Science and AI Research—has been one of the most prominent voices in this discussion. This is in part because he is a venerated mathematician who won a Fields Medal, the highest honor in the discipline, at age thirty-one; in part because, like Erdős, he is especially collaborative and community-oriented; and in part because he was already thinking seriously and publicly about A.I. when many of his peers still thought, as Tao put it, “Oh, it’s a toy, it makes so many mistakes, it’s never going to be useful.” A.I. labs such as Google DeepMind, OpenAI, and Anthropic were trying to demonstrate otherwise. From their perspective, math problems are practical benchmarks to measure the capabilities of their products. Mathematical proofs can be digitized and objectively verified, and the field of mathematics is highly respected. Early on, A.I. tools were conspicuously bad at basic math. When OpenAI’s GPT-4 Turbo was asked to count the number of “L”s in “lollapalooza,” it answered “Five.” The tools have since improved dramatically, but even now L.L.M.s find difficult some tasks that we find easy, and vice versa. “The means by which an A.I. solves a problem is just so orthogonal to the way a human solves a problem,” Tao said, in a recent lecture. A.I. proofs often devote pages to what would be obvious to an undergraduate, then offer only a few lines on what to a human mathematician is a large, cloudy move.\n\nIn 2024, A.I. tools began performing well at the International Mathematical Olympiad, scoring at the silver-medal level and, in 2025, at the gold level. Only top high-school students and a handful of prodigies participate in the I.M.O. (Tao won a bronze at age ten, a silver at age eleven, and a gold the next year. His longtime friend and mathematical collaborator Allen Knutson recalled how an ex-girlfriend who had been on Mexico’s I.M.O. team told him about an annoying little kid with a stuffed animal who would come out of the exams saying, “Too easy”—it was Tao.) Then, in early 2026, mathematicians and math hobbyists using A.I. tools started solving some of the more marshmallowy Erdős problems. In January, GPT-5.2 Pro appeared to have solved Erdős Problem #728 largely on its own; Tao and others took on the necessary task of verifying the proof. Then more Erdős problems began to fall. Tao explained that some of these problems had remained unsolved on account of “an attention bottleneck,” meaning that no one had given much thought to them; others were problems that had already been solved, but the solutions were not widely known, and the A.I. had effectively retrieved them. But, on May 20th, OpenAI published a proof of Erdős Problem #90, the unit-distance problem, a combinatorics problem that involves arranging points on a plane so that as many pairs as possible are spaced an equal distance apart. This was not a marshmallow. Top-level mathematicians had spent time on it, nudging it forward.\n\nThen, there was the Navier-Stokes existence-and-smoothness problem. The problem has to do with how a set of equations that model the movement of fluids seems to imply solutions with infinite speed, which should be impossible. In 2000, the Clay Mathematics Institute, in Cambridge, Massachusetts, had announced seven Millennium Prize Problems, chosen and formulated by the institute’s Scientific Advisory Board, each with a million-dollar award for solving it. The Millennium Prize Problems are acorn problems, and Navier-Stokes was one of them. On September 8th, OpenAI announced that it had solved it. Much of the mathematical community, which was already distressed, tipped over into existential crisis.\n\n“I have had the strangest week ever in my life,” Tao declared at the start of a talk he gave three days later, at Caltech. Usually, when lecturing, he appears in a collared shirt, tucked in. At this talk, he wore jeans and a black T-shirt. The shirt featured the Edo-era woodblock print “Under the Wave Off Kanagawa,” a famed art work noted for its fractal-like patterning—the wave comprises smaller, similarly shaped waves, which themselves comprise yet smaller ones. “Ordinarily, I would use A.I. and create some fancy version of this,” Tao said, gesturing at the bare-bones graphic on the screen behind him. “I used PowerPoint,” he admitted, to laughter. He then described the current state of the field. Solutions were being published, often with little explanation or detail, relying on the good will and free labor of mathematicians to verify and illuminate them. A.I.-generated submissions were overwhelming mathematics journals and databases, and the field’s genteel ecosystem of people volunteering their time to referee submissions was collapsing under the weight of slop. Sometimes even the person submitting the paper did not understand it. Answers were being found, but, in math, answers are often not very important; the insights and inventions that arise while working toward an answer matter much more. “We have to slow down,” Tao said. “It’s insane, the pace.” During the Q. & A. portion of the talk, an audience member observed that A.I. has thus far been solving problems that already exist. Where did Tao think new problems would come from? New problems, Tao said, emerge from “the slow, deliberative process” of working toward a solution, “and this is what’s being destroyed.”\n\nIn another era of mathematics, which is to say, in April, I visited Tao at his office in the Mathematical Sciences Building at U.C.L.A. The building was connected through a mazelike series of corridors and stairs to Boelter Hall, where, in 1969, the first message was sent on ARPANET, the precursor to the internet. One of the hallways had a telephone booth. Tao’s office was spacious and mostly unadorned, with beige carpeting and a beige sofa, six blackboards mounted onto two long walls, and stacks and shelves with hundreds of books bearing titles such as “Advances in Analysis: The Legacy of Elias M. Stein,” “Number Theory Volume I: Tools and Diophantine Equations,” and “The Arithmetic of Elliptic Curves.” Near the light switch, there was a drawing of a toothy monster in a black suit and tie, next to a message in code (“LWKIRLCS,” part of it read) written on a sheet of paper. His oldest child had made it for him years ago. “I don’t think I remember how to decode it,” Tao said. None of his many prizes and honors were on display, but there was a wall hanging—made by the Mathematics Genealogy Project, of North Dakota State University—recording generations upon generations of who had studied under whom.\n\nTao is slim, wears his dark hair boyishly grown out, and has a gentle and calm demeanor. He is fifty-one but looks a decade younger. He rides a bike to work, and he has several tennis racquets in the corner of his office, though he said that he hasn’t really had time to play tennis in years, owing to his proliferating duties. “If you want to profile a mathematician, I’m maybe not a good example,” he told me. “I get to do math on Tuesdays and Thursdays. And sometimes on airplanes.” He lives with his wife, Laura, their two children, four cats, a dog, and three rabbits. The family had intended to give the oldest rabbit, Spumpkin, away to a friend, because Spumpkin was “traumatized by the traffic” outside their house, Tao said. But that didn’t work out, so Spumpkin is still with them, which is O.K.; Spumpkin and the oldest cat are close friends.\n\nMany mathematical geniuses have been as celebrated for their eccentricity as for their work. Erdős is only one of many examples. The eighteenth-century Italian mathematician Maria Agnesi, who wrote an early textbook on calculus, gave away most of her money and abandoned mathematics to devote herself fully to theology. The logician Kurt Gödel, whose incompleteness theorems revealed that no mathematical system could express every mathematical truth, came to believe that doctors had a secret book in which they wrote honestly about medications, that the I.R.S. was after him, and that his friend who had died decades before was still alive in the Soviet Union. John Nash (famous for contributions to game theory), Grigori Perelman (famous for solving the Poincaré conjecture), and Alexander Grothendieck (famous for developing a new foundation for algebraic geometry) all dramatically withdrew from their social spheres. Tao does not fit this tradition. He is very much of the world, which is somewhat surprising, considering that, when he was two years old, he was reportedly found typing out a favorite children’s story on his dad’s typewriter.\n\nAs a kid, Tao imagined that what professional mathematicians did was solve problems assigned to them, sort of like homework. By age sixteen, he was a graduate student in the mathematics department at Princeton University, and still somewhat in the dark about what he was meant to do with his mathematical imagination. He played a lot of video games, easily completed his coursework, and almost failed the qualifying exam for his doctorate. Not all child prodigies go on to brilliant careers. Tao, however, went on to become one of the most revered mathematicians alive today, praised for his profound contributions to an astonishing range of subjects, from the study of numbers to the analysis of waves—a polymath of math.\n\nThe election of Donald Trump for a second term, in 2024, made Tao even busier. Federal funding for U.C.L.A.’s Institute for Pure and Applied Mathematics (IPAM), where he serves as the director of special projects, was frozen, as were National Science Foundation grants that supported his department’s research, including his own. And, as the Trump Administration unrolled various anti-immigration orders, students and postdocs had visa troubles. Tao spent many months fund-raising among private donors to support the stipends and T.A. positions relied upon by his graduate students. Some of these donors were hedge funds and banks that had in the past offered him large sums to work for them. He had always declined, “but those connections were useful in that moment,” he said.\n\nOne of the companies that offered funding to IPAM was OpenAI. Earlier this year, Tao was interviewed alongside an OpenAI executive, Mark Chen, in what the company called a fireside chat. In the interview, Tao expressed both hopes and concerns about A.I. in mathematics; OpenAI later used some of his bullish bits in a promotional video, which featured Tao saying that A.I. is “ready for prime time,” and that it will reduce cognitive friction “down to zero.” Tao has collaborated with researchers at Google DeepMind, and one of his projects was sponsored by the A.I. startup Math, Inc. For these reasons, among others, he was for a time portrayed as almost uncritically enthusiastic about the role of A.I. in math; in a June article in Quanta Magazine, he was described as an “evangelist.”\n\nIt is true that, for a few years now, Tao has suggested that the chalkboard-dominated field of mathematics might be overdue for change. He has expressed hope that A.I. could help make a “living spreadsheet” of mathematics, which could self-update as new mathematical discoveries are made; he has worked to develop open-source A.I. tools, in addition to helping organize events to encourage a collaborative approach to A.I. In 2024, he started the Equational Theories Project, which involved dozens of professional and amateur mathematicians who, with the assistance of A.I., tried to determine the truth or falsity of about twenty-two million mathematical implications of some forty-five hundred invented mathematical laws. He has spoken about how A.I. could enable even more large-scale collaborations. He would like mathematics to be able to ask questions more in the tradition of biologists’ population studies (“What makes lemur populations rise and fall?”) rather than case studies (“What can we say about this particular lemur and from there gain some insight into lemurs in general?”).\n\nRecently, though, Tao’s muted optimism has given way to alarm. He has begun to speak in praise of cognitive friction, and has described A.I. companies as having “managed to optimize by removing all the humanity out of the process.” In his office, he told me, “We have to actively experiment and figure out what works for us. Because otherwise what’s going to happen is that the tech companies will release these products—you know, ‘Here’s my artificial scientist’—and there’ll be no competing products.” He doesn’t advocate that mathematicians avoid using A.I. But, at his lecture at Caltech, he pointed out that the effect of A.I. on math followed what he called nonlinear dynamics. He went on, “Any kind of monotone, one-dimensional thinking—Oh, a little bit of this is good, therefore a lot of it is going to be a lot better—one of the lessons of math is that most systems don’t work like that.” Human understanding needed to remain central. For example, with a proof written by a human, he noted, “you can talk to that person and say, ‘What was your experience? What was your inspiration?’ You have some insight into the process. They can give talks. And, years later, they’ll still be in the community, and they can pass on their expertise to their students. They contribute to the whole ecosystem of mathematics.”\n\nIn his office, Tao had compared the crisis that the mathematical community was facing to the transition that cities underwent when the horse and buggy was replaced with the car. “You need parts of the city that are still for pedestrians and parts that make sense for travelling by car. But you can’t have the whole city designed to be optimal for cars,” he said. “Because no one wants to live in that city.” This was an analogy he used often in talks and interviews. In a more recent talk, he recalled his reliance on the analogy with a slide demarcating lanes for pedestrians and ones for automobiles. “This is where we want to go,” he said. “But, unfortunately, this is sort of where we are now—” He advanced to a slide that depicted people running away in terror from what appeared to be autonomous machines.\n\nMuch of the math we learn as kids is mechanical, which may be why mathematics is sometimes misperceived as an unimaginative field. A more accurate understanding might come from recalling that Charles Dodgson, better known as Lewis Carroll, was a professional mathematician. In some ways, the writing of “Alice’s Adventures in Wonderland” resembles mathematical research. Mechanical calculation, in this analogy, is the basics of composition: spelling, subject-verb agreement. But, in order to explore logic and whimsy and wonder and paradox, Carroll invented characters like the White Rabbit, the Cheshire Cat, and the Queen of Hearts, and situations like the Mad Tea Party and the Caucus Race. These characters and scenes are akin to the objects and techniques mathematicians invent as they explore mathematical ideas. When Andrew Wiles proved Fermat’s Last Theorem, more than three hundred and fifty years after its initial postulation, mathematicians were thrilled, but not because of the answer, which wasn’t surprising. (No, there are no positive whole numbers such that a ⁿ + b ⁿ = c ⁿ if n > 2.) What was wonderful about Wiles’s proof was the mathematical techniques he’d developed along the way. That was what advanced mathematics.\n\nBut coming up with characters and story lines is challenging—which is probably why it’s satisfying. I sat in on a meeting Tao had with his postdoctoral mentee, Iqra Altaf, who was working on a problem in geometric-measure theory. “Mathematically, the news is not good,” Altaf said. She went to the chalkboard and began writing out a counterexample to a conjecture she had thought would prove true. “Math is like a video game, or like ‘Groundhog Day,’ ” Tao said. “Every time you die, you come back.” En route to failure, you learn something that aids you in the next go-around. He quoted the Russian mathematician Vladimir Arnold, who once said, “Mathematics is the part of physics where experiments are cheap.” In another conversation, Tao compared learning mathematics to watching “Emily in Paris,” a show that he and his wife enjoyed. “It’s completely ridiculous fluff, but it’s also fun. You learn the tropes, and you can kind of see how it’s going to go,” he said. “But if you’re just given a synopsis of the plot, like, ‘Here’s the premise, and this is what happens’—that’s not the point.” And, if you want to learn how to write your own show, “then it’s not helpful at all.” Seeing scenes done poorly and done well, watching how plots are resolved even in formulaic shows—that’s how you learn to direct your own series. Among the crises that the arrival of A.I. has brought to mathematics, “the most urgent one is, How are we going to train our graduate students?” Tao said. It is a question that he has been asking for several years. The modest-sized problems that graduate students would once have spent months on—learning to think mathematically in the process—can now sometimes be solved by A.I. tools in hours.\n\nOn October 9th, Tao gave a talk (another!) hosted by the American Institute of Mathematics. Three days earlier, OpenAI had released three hundred and seventy-two additional results contributing to or solving open problems in mathematics. (OpenAI’s statement announcing the results briefly mentioned that four thousand problems had been tried, but that detail didn’t get much notice.) Tao started out by explaining that, when he had been invited to give the talk, a year earlier, the title of it had been “Machine Assisted Proof”—that was, in fact, the title on the posters advertising the event—but that “by this point the idea that machines could assist proof was maybe not quite as novel.” So he changed the title to “Math 2.0.”\n\nMath 1.0—“math up to 2025,” Tao said—operated under the basic assumption of “proof scarcity.” Proofs were a sort of currency, central to publishing papers, winning prizes, and getting jobs. The landscape had now changed to one of proof abundance, which Tao compared to food abundance, when “you become a bit pickier about what food gets crammed into your mouth.” We would soon be living in a vast sea of low-quality A.I. proofs, with mathematicians left to fish out what was worthwhile. Math 2.0 would follow from figuring out “how to actually integrate A.I. and humans” to “find a new frontier of tasks,” only some of which would be problems.\n\nDuring the Q. & A., a first-year graduate student at Caltech asked Tao what advice he would give to her generation. He hesitated. He blinked several times. He closed his eyes. “Get involved,” he said. “In—um—you know, in policy. In general.” He paused and then spoke more fluently: “Don’t try to pretend A.I. doesn’t exist. Actually learn what it can and can’t do.”\n\nThe mathematician Geordie Williamson, of the University of Sydney, in Australia, described one A.I.-assisted solution to me as “like this beautiful thing for the whole math community” and another as “like the weed killer Roundup being sprayed on a garden.” Both results were published by Levent Alpöge, a mathematician at Anthropic. The beautiful thing concerned an eighty-seven-year-old problem, the Jacobian conjecture. We can think of the problem as having to do with the possibility of a one-to-one mapping from one shape to another. On July 19th, the day of the Spain-Argentina soccer game, Alpöge posted on X, “hello there the jacobian conjecture is false thanx to my close friend akhil”—a human—“for asking about it and my other close friend fable”—an A.I. model—“for working during the world cup final.” Claude Fable 5 had produced a counterexample to the conjecture, much like how an ostrich is a counterexample to the conjecture that all birds can fly. Williamson said, “Within thirty-six hours, mathematicians had kind of understood where the counterexample comes from and why it’s natural.” A handful of mathematicians, including Tao, explored the proof, came to understand it—a process that I kept hearing mathematicians refer to as proof digestion—and reconstructed the algebraic geometry that underlay it. On July 21st, Tao posted the work on his blog, including the transcript of a conversation he’d had with ChatGPT as he looked into the details. By July 22nd, Semon Rezchikov, of Barnard College, had created a visualization of the counterexample using only high-school-level mathematics. The proof had opened up thinking, not decapitated it.\n\nBut then there was Williamson’s Roundup story: On August 12th, Alpöge posted again, though it was not immediately clear what the new disclosure was about. “It was this crazy tweet, just a whole sequence of pluses and minuses. It looked like a secret code,” Williamson told me. He soon recognized that it was the next in a series of what are called Hadamard matrices. The first few Hadamard matrices had been described in 1867, and the matrices have fascinated mathematicians ever since, with breakthroughs and new insights turning up every couple of decades or so, the most recent in 2004. At a talk not long before, Williamson had been encouraging mathematicians to find the next one. Then there it was, on X. “At first, I was, like, Awesome,” Williamson told me. But then he saw that Alpöge had posted more than just the next matrix—“also the one after that, and the one after that, and the one after that,” he said. Typically, someone solving this kind of problem would be transparent about the methods used to get there; for years, mathematicians have been sharing their work freely on the open-access website arxiv.org. Such is not the M.O. of the A.I. companies. Anthropic did not release logs showing how the solutions were reached. Williamson said that he felt as if an entire garden of mathematics had been killed. “It was the nightmare scenario, like, ‘Here’s the answer, it’s forty-two.’ ”\n\nIt was less than a month later that OpenAI made its Navier-Stokes announcement. The day before, Tristan Buckmaster, a professor at N.Y.U., posted a statement saying that he and Alpöge, working with the assistance of A.I., had made significant progress toward a solution. OpenAI, which spent millions of dollars’ worth of compute to get there first, said that it had taken less than a week. In Buckmaster’s statement, he voiced concern that OpenAI had accessed his work (he and Alpöge had used OpenAI’s public Codex model, among other L.L.M.s), which the company denied. According to Buckmaster, Sébastien Bubeck, the head of the team at OpenAI that was behind the solution, had offered him authorship of their paper, on the condition that he agree not to include Alpöge. Buckmaster said no. When he threatened to make his interaction with OpenAI public, Bubeck apparently responded by asking, “Why would you ruin your career?”\n\nAn initial group of twenty-five Fields medallists, Tao among them, responded with an open letter noting that “solving problems is only a tool and proxy for achieving the primary goal of conceptual understanding and insight.” Problem-solving and insight were decoupling, it observed. “The letter was correct to call out bad behavior,” Williamson said. “But my broader sense is that I don’t think mathematicians had been grappling as much as we should have been with the impending reality of A.I., and I think that is somewhat visible in the letter. It’s a letter that reflects what was already a reality six months ago.”\n\nSocrates is said to have worried that writing would ruin our memories—and Socrates’ crowd probably did remember longer stretches of the Odyssey than any of us do. But the Fields letter argued that the use of A.I. was not like merely off-loading the memorization of poems or phone numbers; it was more like off-loading, or bypassing, daydreaming and debating and thinking. It’s not that humans will come to know too much too quickly but that they will understand less and less—eventually less than we understand now. “The most precious resources of our profession are students and ideas, and these we nurture with great care,” the letter said. Mathematics is a living discipline and an oral tradition, not just a written one. The symbol of the working mathematician is a chalkboard, representing knowledge that can be erased after it’s understood because it is now in the mind.\n\nThe mathematical community has not reached a consensus on whether OpenAI has actually solved the Navier-Stokes problem, which has not yet been verified by humans. Charlie Fefferman, a professor at Princeton, wrote the description of the Navier-Stokes problem for the Clay Mathematics Institute. “I think it’s probably correct,” Fefferman told me. The A.I. relied on an approach that had been conceived by his former student Diego Córdoba and Córdoba’s former student Luis Martínez-Zoroa. “And so, in addition to whatever other people felt, I felt personal joy at their achievement,” Fefferman said.\n\nFefferman, like Tao, was a child prodigy, an early winner of the Fields Medal, and a professor of mathematics by his early twenties. He is now seventy-seven. I asked him how he would describe what working on a math problem feels like. He told me that he had sometimes described it to non-mathematicians as playing chess with the Devil, “but you get to take back moves.” The Devil is a much better chess player—“he crushes you again and again.” But then you go back to the beginning. You experiment with different approaches. You’re still crushed and don’t understand why. “But eventually you hit on something,” Fefferman said. “The whole time, there’s this angel whispering in your ear things like ‘No, no, pin his bishop!’ ” Initially, the angel’s voice is too quiet to make out, but it gets louder. “And your ears get better.” Until, finally, you win one match. And then you’re back at the beginning. “That’s something I love about being a mathematician,” Fefferman said. “If you have a thousand dumb ideas and one really good one, you’re a good mathematician. And that’s not true in many walks of life.”\n\nLike everyone I spoke to, Fefferman said that no one knows, really, what will happen to mathematics. He sees both pessimistic and optimistic scenarios, and he suspects that the future will consist of a bit of each. In an optimistic scenario, he can envision A.I. broadening the kinds of questions that can be asked. He explained that sometimes you have a line of thinking that feels like it has only a five-per-cent chance of working out. You might say, “I don’t want to think about this, since it will take me a lifetime to find out.” “That’s different from ‘O.K., it has a five-per-cent chance of working, and it will take me two days to find out,’ ” Fefferman said. “I think people will become more courageous and more imaginative and be freed.” He said that mathematicians used to need both originality and technical power; he had known a very original mathematician who got lost teaching a freshman course. “I think that A.I. will take over power,” Fefferman said. “It’s natural for us mathematicians to feel anxiety. But I think there’s a chance that A.I. will be a great accelerator of progress, and it will be our job to adjust to the new way of doing math.”\n\n“I thought the Fields medallists’ letter was valuable,” John Urschel, a mathematician at M.I.T., told me. “Though I understand that maybe it doesn’t translate well outside of the mathematical community. I saw one person be, like, ‘We’re getting answers to cancer research too quickly, we must slow down for the sake of the field!’ ” Urschel is good friends with Alpöge, whom he remembers saying three or four years ago that A.I. was going to end math as they knew it. “I thought he had lost all sense,” Urschel said.\n\nA deep problem in what is called Gaussian elimination has captivated Urschel for years. During the course of a decade, he developed a research protocol that he was confident could solve it—eventually. But, as A.I.-assisted solutions to Erdős problems started going up online, he worried that he was running out of time. “So I began to rush ahead,” he said. “I had a postdoc, Rikhav Shah, helping me.” Within a week, Shah told Urschel that “he had heard rumors that compute power was being thrown behind problems in Gaussian elimination,” and Shah thought that they should consider using A.I. Urschel agreed. “So I paid the two hundred dollars a month or whatever,” he said, and they worked with GPT-5.6 Sol and Claude Fable 5.\n\nUrschel walked me through the collaboration with A.I. “So first I asked it, ‘Can you solve this?’ And it said no, and also that it didn’t think what I was telling it was even true,” he recalled. “I said, ‘O.K., here’s this object that has these properties that you didn’t believe existed.’ ” He went on to feed it steps from his research program. The “conversation” went back and forth, with Urschel pushing the A.I. along the axis of his research program, and the A.I. responding in an irksome, sycophantic tone. Urschel directed it to change its tone to be straightforward and honest. Eventually, something “popped out” that was correct but “very, very ugly.”\n\nErdős described proofs that are particularly concise and beautiful—proofs that give you deep insight—as “straight from the Book,” by which he meant the Book of God, though he doubted the existence of God, whom he called the S.F., for Supreme Fascist. Erdős’s first mathematical publication, at age nineteen, was a proof of Chebyshev’s theorem on prime numbers, which had already been proved. But Erdős produced a much simpler proof, one that was succinct and revelatory. A.I. proofs (at least for now) tend to be nothing like straight-from-the-Book proofs. When Urschel looked at the A.I.-assisted proof, he said, “I thought, O.K., we can take this thing and with human work change it into this nice and intuitive thing.” Urschel and Shah published their research, including a detailed endnote of which steps in the process were exclusively human-produced and which were assisted by A.I.\n\nUrschel’s program of research had brought about novel, important work. Shah would have a substantive publication behind him when seeking jobs. But Urschel did not feel celebratory. “Let me be clear. There was no fun in this for me,” he said. “The fun was had before I gave it to this computer program. But talking to the A.I. about it—this is not fun.” He recalled, as a kid, falling in love with logic puzzles. What he loved was being in the dark, trying to find his way forward. “The fun part was not understanding, and struggling to understand,” he said. “Having all the solutions written down is the least fun part.”\n\nMathematics “has been living a bit of a double life,” he suggested, and the pressure from A.I. was making that visible. To people outside the discipline, the story is that math is important and that, even at its most abstract, it often ends up leading to all sorts of unexpected applications, like public-key cryptography and G.P.S. “This is the story one tells when one wants grant money,” Urschel said. “But this story is not true. And it has never been true.” Or, at least, it’s mostly not true. Urschel postulated that every mathematician sees himself as being somewhere on a spectrum between scientist and artist. “I would say what I call the more scientist approach is being focussed on trying to push the frontier of things as far as we can as quickly as we can,” he told me. “And the artist perspective is, Let me do something beautiful and enjoyable and manipulate these things, and the act of doing this is really, you know, a joyful thing.”\n\nUrschel has an unusual background for a mathematician. He played professional football for three years with the Baltimore Ravens, working toward his Ph.D. at M.I.T. at the same time. His wife is a writer for this magazine. I asked him what he planned to do next. “Well, we’re gonna get a dog,” he said. “And there’s still lots of math to do in my area.” Some of his students want to work with A.I., which he is O.K. with, and others don’t, and he’s O.K. with that, too. (“I have two A.I. vegans,” he said.)\n\nTao also told me that the narrative of math as having practical importance was a half-truth, at best. Some of his own research has led to cheaper, faster MRI imaging; most of it has been about curiosity, wonder, and play. He told me a story about the mathematician John Conway, whom he knew at Princeton and whose office was crowded with what were, in essence, puzzles and toys. “I remember once he wanted to learn how to see things in four dimensions,” Tao said. “He reasoned that, since our eyes can really only see in two dimensions”—it’s the distance between the eyes that produces parallax and lets us see as if our vision were three-dimensional—“he invented this weird periscope thing, a goggle thing with mirrors, so that the parallax would not just be horizontal but also vertical. He thought this would give him a way to visualize in four dimensions.” Conway built the device and walked around in it, looking like a mad scientist. “But he said the only thing that it ever gave him was a headache,” Tao told me.\n\nTao never solved the problem that Erdős shared with him in 1985. That was done by Hoi Nguyen and Van Vu, in 2010. But Tao did solve a different famous Erdős problem, one that had been formulated around 1930, known as the Erdős discrepancy problem. It was one of the Hungarian mathematician’s favorite problems. He is said to have brought it up often, especially toward the end of his life. It can be thought of as a question about a series of coin flips, continuing on infinitely, and whether that series inevitably becomes “unbalanced” if you look at every second, or third, or any-number-distance entry in it. Another mathematician, James Grime, made the problem more accessible by translating it into a puzzle narrative, involving someone held captive between angry snakes in front of them and a precipitous cliff behind them. The coin flips are steps forward or back, and the question is whether it is possible to survive. You could Google the answer. Or you could play around with the problem first. ♦",
+  "analysis": {
+    "translation": "人工智能正在攻克令数学界困扰数十年的难题。数学家们开始向陶哲轩寻求指引，思考这个已然改变的世界。\n\n数学家是一台把咖啡转化为定理的机器。这是匈牙利数学家保罗·埃尔德什经常引用的一句话。他靠咖啡和安非他命提神，睡眠极少，几乎不停地旅行，终身未婚、没有子女，并在一生中与数百名数学家合作发表了将近一千五百篇论文。但从大多数方面来看，埃尔德什并不像机器。他把讲授数学称为“布道”，会在奇怪的时间叫醒朋友，问他们“你的大脑开机了吗？”，因为皮肤敏感而只穿丝质内衣，还声称直到二十一岁才学会给吐司抹黄油。他把大部分收入捐给慈善事业和需要教育经费的年轻数学家，还为自己提出的数学问题悬赏征解，奖金有时是十美元，有时是一千美元。数学就是他的生命，数学家就是他的家人。有人说，比起他对数学文献作出的卓越贡献，他对这门学科更深远的帮助，是把一些原本可能成为对冲基金经理、联邦调查局探员或迷失方向的人的年轻人引上了数学之路。1996年，他以八十三岁之龄去世，留下大约一千道问题。解出一道埃尔德什问题是莫大的荣誉，拥有较低的“埃尔德什数”也是如此。这个数字用来衡量一个人与埃尔德什共同发表论文之间隔着多少层合作关系。\n\n1985年，埃尔德什来到澳大利亚阿德莱德，那里是当时十岁的陶哲轩的家乡。埃尔德什喜欢孩子，称他们为“ε”。陶哲轩是个数学神童，九岁就开始学习大学程度的课程。埃尔德什给他出了一道题，两人一起思考。陶哲轩的母亲在生孩子前曾是一名数学教师，她拍下了两人见面的照片：一老一少两位数学家都托着下巴，陷入沉思，望着面前的记事本。“真希望自己还记得那次会面的更多细节。”陶哲轩最近说。后来埃尔德什用贝尔实验室的信纸给陶家写了一封手写便笺，简短祝贺新年之后，他再次写下他们讨论过的题目：“设 1 ≤ a₁ < a₂ <… aₜₙ ≤ n 为一个整数序列……”\n\n2023年5月，数学家托马斯·布卢姆开始在网站 erdosproblems.com 上汇集当时已知仍未解决的埃尔德什问题。这些问题的深度与难度并不相同，而这是刻意安排的。埃尔德什称其中一些为“棉花糖”，另一些为“橡子”。今年2月，在一场题为“机器辅助与研究数学的未来”的演讲中，陶哲轩引用了埃尔德什的说法：棉花糖是“让人短暂享受片刻愉悦的美味小点心”，橡子则“需要深刻而微妙的新洞见，最终能长成参天大树”。\n\n过去五年，人工智能将在数学研究中扮演什么角色，已经引发了不少讨论；而过去五个月的讨论则激烈得惊人，几乎没有边界。陶哲轩是加利福尼亚大学洛杉矶分校的数学教授，也是2025年成立的科学与人工智能研究基金会的创办人之一，一直是这场讨论中最受瞩目的声音之一。一部分原因是，他是一位备受尊敬的数学家，三十一岁时便获得了数学界最高荣誉菲尔兹奖；一部分原因是，他像埃尔德什一样，尤其重视合作与学术共同体；还有一部分原因是，当不少同行仍认为人工智能“噢，不过是个玩具，错误那么多，永远不可能派上用场”（陶哲轩这样概括）时，他就已经在认真而公开地思考人工智能。谷歌 DeepMind、OpenAI 和 Anthropic 等人工智能实验室则试图证明相反的结论。在它们看来，数学问题是衡量产品能力的实用基准。数学证明可以数字化，也可以接受客观检验，而数学学科本身又享有很高声望。早期人工智能工具在基础数学上差得令人瞩目。有人问 OpenAI 的 GPT-4 Turbo，“lollapalooza”里有几个字母“L”，它回答“五个”。此后这些工具有了飞跃式进步，但即使到了今天，大语言模型仍会在一些人类觉得容易的任务上犯难，反过来也是如此。“人工智能解题所用的方法，与人类解题的方式几乎是完全不同的方向。”陶哲轩最近一次讲座中说。人工智能生成的证明常常花好几页解释本科生也觉得不言自明的内容，却只用几行就跳过人类数学家看来非常艰深、难以一下看透的关键步骤。\n\n2024年，人工智能工具开始在国际数学奥林匹克竞赛中表现出色，达到银牌水平，并于2025年达到金牌水平。只有最优秀的高中生和少数神童才能参加这项竞赛。（陶哲轩十岁获得铜牌，十一岁获得银牌，次年拿到金牌。他的多年好友兼数学合作者艾伦·克努森回忆，自己的一位前女友曾是墨西哥国家队成员，告诉过他有个令人讨厌的小孩，抱着毛绒玩具，考完试走出来就说“太简单了”——那个人正是陶哲轩。）随后，在2026年初，数学家和数学爱好者开始借助人工智能工具解决一些较为“棉花糖式”的埃尔德什问题。1月，GPT-5.2 Pro 看起来几乎独立解决了埃尔德什第728号问题；陶哲轩和其他人承担了核实证明这一必要工作。接着，更多埃尔德什问题接连被攻克。陶哲轩解释，有些问题迟迟未解，是因为存在“注意力瓶颈”，即根本没有多少人认真研究过；另一些问题其实早就得到解决，只是解答并不广为人知，而人工智能实际上把它们检索了出来。但在5月20日，OpenAI 发布了埃尔德什第90号问题——单位距离问题——的一份证明。这是一道组合数学问题，涉及如何在平面上排列一些点，使尽可能多的点对之间具有相同距离。这不是一道“棉花糖”题。顶尖数学家投入过时间，一点点推动它的进展。\n\n接下来是纳维－斯托克斯方程的存在性与光滑性问题。这道问题关乎描述流体运动的一组方程：它们似乎可能产生速度趋于无穷大的解，而这在物理上应当是不可能的。2000年，位于马萨诸塞州剑桥市的克雷数学研究所宣布设立七道“千禧年大奖难题”，由该所科学顾问委员会选定并明确表述，解出每道题都可获得一百万美元奖金。千禧年难题属于“橡子”一类，纳维－斯托克斯问题便是其中之一。9月8日，OpenAI 宣布自己已经将其解决。原本就深感忧虑的数学界，有很大一部分人因此陷入了关乎学科存在意义的危机。\n\n三天后，陶哲轩在加州理工学院的一场讲座开头宣称：“我经历了人生中最奇怪的一周。”通常讲课时，他会穿着掖进裤腰的有领衬衫；这一次，他穿着牛仔裤和黑色T恤。T恤上印着江户时代的木版画《神奈川冲浪里》，这幅名作以近似分形的图案著称——大浪由形状相近的小浪构成，小浪中又包含更小的浪。“平时我会用人工智能做出一个更精致的版本。”他指着身后屏幕上简朴的图像说。“这次我用的是 PowerPoint。”他承认，引得全场大笑。接着，他描述了数学界的现状：证明纷纷发表，却常常缺少充分解释与细节，依赖数学家的善意和无偿劳动来核实并阐明。人工智能生成的投稿大量涌入数学期刊与数据库，过去依靠人们自愿付出时间进行同行评审、维系着体面秩序的学术生态，正被低质量内容压垮。有时连论文投稿者本人都不理解论文的内容。答案被不断找出，但在数学中，答案通常并不是最重要的；更重要的是在追寻答案的过程中产生的洞见和创造。“我们必须慢下来。”陶哲轩说，“这样的速度太疯狂了。”在问答环节，一位听众指出，人工智能迄今解决的都是已经存在的问题。那么，陶哲轩认为新问题将从哪里产生？他说，真正的“新”问题，来自为寻找解答而进行的“缓慢而审慎的过程”，“而这正是如今遭到破坏的东西”。\n\n在数学界尚属另一个时代的4月，我曾到加州大学洛杉矶分校数学科学楼的办公室拜访陶哲轩。这栋楼通过迷宫般的走廊和楼梯连接到博尔特楼；1969年，互联网前身 ARPANET 上的第一条信息就是从那里发出的。一条走廊里还有个电话亭。陶哲轩的办公室宽敞，装饰却不多：米色地毯和米色沙发，两面长墙上装着六块黑板，书架和书堆里有数百本书，书名包括《分析学进展：埃利亚斯·M. 斯坦的遗产》、《数论第一卷：工具与丢番图方程》和《椭圆曲线算术》。电灯开关旁贴着一张画，画上是穿黑西装、打领带、露出一口牙齿的怪物；旁边的一张纸上写着一段密码，其中一部分是“LWKIRLCS”。那是他的大孩子多年前画的。“我想我都不记得该怎么解码了。”他说。他的众多奖项和荣誉没有一项陈列出来，但墙上挂着一幅由北达科他州立大学“数学家族谱计划”制作的图表，记录着一代又一代数学家之间的师承关系。\n\n陶哲轩身材瘦削，深色头发留得稍长，显得年轻；他举止温和而沉静。他五十一岁，看上去却年轻十岁。他骑自行车上班，办公室角落放着几支网球拍，不过他说，近几年由于职责不断增加，基本没有时间打网球。“如果你想给一位数学家写人物特写，我也许不是很好的例子。”他告诉我，“我能做数学研究的时间只有星期二和星期四，有时候还得在飞机上做。”他与妻子劳拉、两个孩子、四只猫、一条狗和三只兔子住在一起。一家人本打算把年纪最大的兔子斯潘普金送给一位朋友，因为这只兔子“被房子外面的交通吓坏了”，陶哲轩说。但计划没成，于是斯潘普金仍住在家里，这也没关系：它与家中年纪最大的猫是好朋友。\n\n许多数学天才因性格古怪而闻名，程度不亚于他们因学术成就而受到赞誉。埃尔德什只是众多例子之一。十八世纪的意大利数学家玛丽亚·阿涅西曾撰写早期微积分教科书，后来捐出了大部分钱财，放弃数学，完全投身神学。逻辑学家库尔特·哥德尔的不完备性定理揭示，没有任何一种数学系统能够表达所有数学真理；他后来却相信医生们藏着一本私密的书，会在里面如实记录药物信息，还认为美国国税局在追查他，以及一位几十年前去世的朋友仍活在苏联。约翰·纳什以博弈论方面的贡献闻名，格里戈里·佩雷尔曼因解决庞加莱猜想闻名，亚历山大·格罗滕迪克则因开创代数几何的新基础闻名，他们都曾戏剧性地退出各自的社交圈。陶哲轩并不属于这种传统。他与现实世界保持着密切联系。考虑到据说他两岁时就被人发现用父亲的打字机打出自己喜爱的儿童故事，这多少令人意外。\n\n童年时期，陶哲轩以为职业数学家的工作就是解答别人布置的问题，有点像做家庭作业。十六岁时，他已成为普林斯顿大学数学系的研究生，却仍不大清楚该如何运用自己的数学想象力。他玩大量电子游戏，轻松完成课程作业，却差点没通过博士资格考试。不是所有神童长大后都有杰出的事业。但陶哲轩后来成了当今最受敬仰的数学家之一；从数的研究到波的分析，他在令人惊叹的众多领域都作出了深刻贡献，是一位数学界的博学通才。\n\n唐纳德·特朗普在2024年第二次当选总统，让陶哲轩变得更加忙碌。他担任特别项目主任的加州大学洛杉矶分校纯粹与应用数学研究所（IPAM）的联邦经费被冻结，支持其系内研究的美国国家科学基金会拨款也被冻结，包括他本人研究所依赖的款项。随着特朗普政府陆续推出各种反移民命令，学生和博士后研究人员也遇到了签证困难。陶哲轩花了好几个月向私人捐助者筹款，以维持研究生赖以生活的津贴和助教职位。捐助者中有对冲基金和银行，它们过去曾出高薪邀请他去工作。他一直拒绝，但他说：“那时，这些关系派上了用场。”\n\n向 IPAM 提供经费的公司之一是 OpenAI。今年早些时候，陶哲轩与 OpenAI 高管马克·陈共同接受了一场该公司所谓的“炉边谈话”访谈。访谈中，他既表达了对人工智能进入数学界的期待，也谈到担忧。后来 OpenAI 将他一些较为乐观的言论放入宣传视频，片中他说人工智能已“可以正式登场”，并将把认知阻力降低“到零”。陶哲轩曾与谷歌 DeepMind 的研究人员合作，他的一个项目还得到了人工智能初创公司 Math, Inc. 的赞助。由于这些原因及其他因素，有一段时间他被描述成对人工智能用于数学几乎不加批判的热情支持者；6月《量子杂志》的一篇文章称他为“传道者”。\n\n诚然，几年来陶哲轩一直提出，长期以黑板为中心的数学学科也许早该改变。他曾希望人工智能能协助创建一份数学的“动态电子表格”，随着新数学发现的出现自行更新；他也参与开发开源人工智能工具，并协助组织活动，鼓励采用协作方式研究人工智能。2024年，他发起了“方程理论项目”，数十位专业与业余数学家借助人工智能，尝试判定大约四千五百条虚构数学定律之间约两千两百万个数学蕴涵关系是真是假。他还谈过人工智能如何推动规模更大的合作。他希望数学能够更多地提出类似生物学人口研究传统中的问题，例如“什么因素让狐猴的种群数量增加或减少？”，而不是只做个案研究，例如“我们能对这只特定的狐猴说些什么，再由此得出对狐猴整体的理解？”\n\n不过最近，陶哲轩原本有所保留的乐观已经转变成警觉。他开始赞扬认知阻力的价值，并形容人工智能公司“通过从整个过程中剔除全部人性来实现优化”。他在办公室告诉我：“我们必须主动做实验，弄清什么对我们有效。否则，科技公司就会发布这些产品——你知道，‘这是我的人工智能科学家’——而市场上将没有其他产品与之竞争。”他并不主张数学家避免使用人工智能。但在加州理工的讲座上，他指出，人工智能对数学的影响遵循他所谓的非线性动力学。他接着说：“任何那种单调的、一维的思维——噢，一点这个东西有好处，所以多用很多就会好得多——数学告诉我们的一个教训是，大多数系统并不是这样运作的。”人类理解必须始终处于核心位置。比如，对于人类撰写的证明，他指出，“你可以和作者交谈，问‘你经历了什么？灵感从哪里来？’你能对整个过程有所了解。他们可以做讲座。多年以后，他们还会留在学术共同体里，把自己的专长传授给学生。他们为整个数学生态作出贡献。”\n\n在办公室里，陶哲轩曾把数学界正在经历的危机，与城市从马车转向汽车的变迁作比较。“城市的一部分需要留给行人，另一部分可以按驾车出行的需要来设计，但你不能让整座城市都以汽车的最优通行为设计目标。”他说，“因为没人愿意住在那种城市里。”这是他在演讲和访谈中经常使用的类比。在最近的另一场讲座上，他再次借用这个比喻，展示一张幻灯片，上面为行人和汽车划定了不同车道。“这是我们希望到达的状态。”他说，“但不幸的是，我们目前更像是这样——”他切换到下一张幻灯片，画面上人们正惊恐地逃离一些看起来像自主机器的东西。\n\n我们小时候学习的大部分数学都带有机械性，这或许解释了为什么人们有时误以为数学是一门缺乏想象力的学科。要更准确地理解数学，不妨想想查尔斯·道奇森，也就是更为人熟知的刘易斯·卡罗尔，其实是一位职业数学家。从某些方面看，《爱丽丝梦游仙境》的创作与数学研究很相似。在这个类比中，机械计算就相当于写作的基础：拼写和主谓一致。但为了探索逻辑、奇思妙想、惊奇与悖论，卡罗尔创造出白兔、柴郡猫和红心皇后等角色，以及疯狂茶会和党团竞赛等情节。这些人物与场景类似于数学家探索数学思想时发明的对象和技巧。安德鲁·怀尔斯在费马大定理最初提出三百五十多年后证明了它，数学家们欣喜若狂，但不是因为答案本身出人意料。（不，若 n > 2，就不存在使 aⁿ + bⁿ = cⁿ 成立的正整数。）怀尔斯证明的精妙之处，在于他在过程中发展出的数学方法。这才是真正推动数学前进的东西。\n\n但构思人物和故事情节本身很有挑战性——这大概正是它令人满足的原因。我旁听过陶哲轩与他指导的博士后研究员伊克拉·阿尔塔夫的一次讨论，她正在研究几何测度论中的一道问题。“从数学上说，消息不太好。”阿尔塔夫说。她走向黑板，开始写出一个反例，推翻了她原本以为能证明成立的猜想。“数学就像电子游戏，或者像《土拨鼠之日》。”陶哲轩说，“每次你死了，还能重新来过。”在走向失败的过程中，你会学到一些东西，帮助你下一次尝试。他引用俄罗斯数学家弗拉基米尔·阿诺尔德的话：“数学是物理学中做实验成本低廉的那一部分。”在另一次谈话中，陶哲轩把学习数学比作观看他与妻子都喜欢的剧集《艾米丽在巴黎》。“这完全是荒唐的轻松娱乐，但也很有趣。你学会了那些套路，大致就能看出剧情会怎么发展。”他说，“但如果别人只是给你一份剧情概要，告诉你‘这是故事前提，接下来发生了这些事’——那就失去了意义。”如果你想学会自己编写一部电视剧，“那就更是毫无帮助”。观看有些场景拍得糟糕、有些拍得精彩，观察即使是公式化的剧集如何解决情节冲突——这才是你学习执导自己作品的方法。人工智能进入数学界引发的诸多危机中，“最紧迫的问题是，我们要怎样培养研究生？”陶哲轩说。几年来，他一直在问这个问题。过去研究生需要花上几个月解决的中等规模问题——并在过程中学习数学式思考——如今有时人工智能工具几小时就能解决。\n\n10月9日，陶哲轩又做了一场演讲（又一场！），由美国数学研究所主办。三天前，OpenAI 发布了三百七十二项新成果，它们有助于解决或已经解决一些尚未解决的数学问题。（OpenAI 在公告中简短提到，他们尝试过四千道题，但这一细节并未引起太多关注。）陶哲轩一开始解释说，一年前他受邀演讲时，题目是“机器辅助证明”——事实上，宣传海报上的标题仍然如此——但“到了现在，机器可以辅助证明这件事，似乎已经算不上特别新颖了”。于是他把标题改成了“数学2.0”。\n\n陶哲轩说，“数学1.0”——也就是“直到2025年的数学”——建立在“证明稀缺”这一基本假设之上。证明是一种货币，是发表论文、获奖和求职的核心。现在，整个格局转变为证明充裕的时代。他把这种情形比作食物充裕时的状态：“你会更挑剔什么食物可以塞进自己嘴里。”我们很快就将生活在由低质量人工智能证明组成的汪洋大海里，数学家必须从中捞出真正有价值的东西。数学2.0将产生于这样一项探索：如何“真正把人工智能与人类结合起来”，从而“找到新的任务前沿”；而在这些任务中，只有一部分会是数学问题。\n\n在问答环节，加州理工学院的一名一年级研究生问陶哲轩，会给她这一代人什么建议。他迟疑了，眨了几次眼，闭上眼睛。“参与进来。”他说，“参与——嗯——你知道，政策事务。总体而言。”他停了一下，然后说得更流畅了：“不要假装人工智能不存在。要真正了解它能做什么、不能做什么。”\n\n澳大利亚悉尼大学的数学家乔迪·威廉姆森告诉我，一项人工智能辅助得出的解答“对整个数学界来说像是一件美好的事物”，另一项则“像是在花园里喷洒除草剂‘农达’”。这两项成果都由 Anthropic 的数学家莱文特·阿尔珀格发表。那件美好的成果涉及一个有八十七年历史的问题：雅可比猜想。我们可以把它理解为关于从一种形状到另一种形状能否建立一一映射的问题。7月19日，西班牙与阿根廷足球比赛当天，阿尔珀格在 X 上发帖说：“大家好，雅可比猜想是错的，谢谢我的好朋友 akhil”——一名人类——“提出这个问题，也谢谢我的另一位好朋友 fable”——一个人工智能模型——“在世界杯决赛期间工作。”Claude Fable 5 找到了一个反例，推翻了该猜想，就像鸵鸟可以推翻“所有鸟都会飞”这一猜想一样。威廉姆森说：“三十六小时之内，数学家大体上就理解了这个反例从何而来、为什么它是自然出现的。”包括陶哲轩在内的几位数学家研究了证明，理解了它——我不断听到数学家将这一过程称为“消化证明”——并重建了其背后的代数几何。7月21日，陶哲轩在博客上发布了这项工作，还附上自己研究细节时与 ChatGPT 的一段对话记录。到了7月22日，巴纳德学院的谢蒙·列兹奇科夫仅用高中水平的数学知识，就制作出了该反例的可视化展示。这份证明打开了思路，而不是斩断了思考。\n\n但另一方面，还有威廉姆森讲述的“农达”事件：8月12日，阿尔珀格再次发帖，不过起初人们并不清楚他这次公开的究竟是什么。“那是一条疯狂的推文，里面只有一长串加号和减号，看起来就像秘密代码。”威廉姆森告诉我。他很快认出，那是所谓阿达马矩阵序列中的下一个矩阵。最早的一批阿达马矩阵于1867年被描述，从那以后一直吸引着数学家，隔上二三十年就会出现突破或新的洞见，最近一次是在2004年。在不久前的一场讲座上，威廉姆森还在鼓励数学家寻找下一个矩阵。结果，它突然就出现在 X 上。“一开始我心想，太棒了。”威廉姆森告诉我。但他接着发现，阿尔珀格发布的远不只是下一个矩阵——“还有再下一个、再下一个、再下一个”，他说。通常，解决这类问题的人会公开他们所使用的方法；多年来，数学家一直在开放获取网站 arxiv.org 上自由分享研究成果。但人工智能公司的行事方式并非如此。Anthropic 没有公布展示这些答案如何得出的运行日志。威廉姆森说，他感觉仿佛整个数学花园都被毁掉了。“这就是噩梦般的情景，仿佛有人说：‘答案在这里，是四十二。’”\n\n不到一个月后，OpenAI 就发布了纳维－斯托克斯问题的公告。就在前一天，纽约大学教授特里斯坦·巴克马斯特发表声明，称他与阿尔珀格在人工智能辅助下，已朝着解决该问题取得重大进展。OpenAI 为了抢先取得成果投入了价值数百万美元的算力，并声称花了不到一周。巴克马斯特在声明中担忧 OpenAI 可能获取了他的研究成果（他与阿尔珀格曾使用 OpenAI 公开提供的 Codex 模型以及其他大语言模型），而该公司否认了这一点。据巴克马斯特说，OpenAI 负责该项解答的团队负责人塞巴斯蒂安·布贝克曾提出让他成为论文作者，条件是他同意不将阿尔珀格列为作者。巴克马斯特拒绝了。当他威胁要公开与 OpenAI 之间的交涉时，布贝克似乎回应道：“你为什么要毁掉自己的职业生涯？”\n\n最初由二十五位菲尔兹奖得主组成的群体（陶哲轩也在其中）发表了一封公开信，指出“解决问题只是实现首要目标——概念性理解与洞见——的一种工具和替代性衡量指标”。信中认为，解决问题与获得洞见正在脱钩。威廉姆森说：“这封信指出不当行为，是正确的。但更广泛地说，我觉得我们数学家并没有像本应做到的那样，认真面对人工智能即将带来的现实；我认为这点在信里也有所体现。这封信反映的是六个月前就已成为现实的状况。”\n\n据说苏格拉底曾担心书写会毁掉人的记忆——而苏格拉底身边的人大概确实比我们任何人都能记住更长篇幅的《奥德赛》。但菲尔兹奖得主们的公开信认为，使用人工智能并不只是把背诵诗歌或电话号码的工作交给外部工具；它更像是把白日遐想、辩论与思考本身外包，甚至直接绕过这些活动。危险不在于人类过快知道太多事情，而在于理解能力越来越薄弱，最终甚至不如今天。“我们这个职业最宝贵的资源是学生和思想，我们以极大的关怀培育两者。”信中说。数学是一门活生生的学科，也是一种口耳相传的传统，而不仅是书面传统。工作的数学家的象征是一块黑板：它代表着一旦知识被理解、进入头脑，就可以擦除的东西。\n\n数学界尚未就 OpenAI 是否真的解决了纳维－斯托克斯问题达成共识，因为这份证明还没有经过人类核实。普林斯顿大学教授查理·费弗曼曾为克雷数学研究所撰写该问题的说明。“我认为它很可能是正确的。”费弗曼告诉我。人工智能依靠的方法，源自他曾指导的学生迭戈·科尔多瓦，以及科尔多瓦曾指导的学生路易斯·马丁内斯－索罗亚所构想的研究思路。“所以，无论其他人作何感想，我都对他们的成就感到由衷高兴。”费弗曼说。\n\n费弗曼与陶哲轩一样，曾是神童，很年轻便获得菲尔兹奖，二十出头就当上数学教授。现在他七十七岁了。我问他，研究一道数学问题在主观感受上是什么样的。他说，自己有时会向非数学家这样描述：就像和魔鬼下国际象棋，“但你可以悔棋”。魔鬼是远胜于你的棋手——“他一次又一次把你击溃”。但随后你又回到起点，尝试不同的方法。你还是被击溃，也不明白为什么。“但最终你会碰到某个关键点。”费弗曼说。“整个过程中，仿佛有个天使在你耳边低声提醒你，比如‘不，不，要牵制他的象！’”一开始天使的声音太轻，听不清，但它会逐渐变响，“而你的耳朵也越来越灵敏”。直到终于有一天，你赢下一局。然后，你再次回到起点。“这正是我喜欢当数学家的原因之一。”费弗曼说，“如果你有一千个愚蠢的想法和一个非常棒的想法，你仍然是一位优秀的数学家。在许多其他行业，事情却不是这样。”\n\n和我交谈过的所有人一样，费弗曼也说，没有谁真正知道数学将走向何方。他看得到悲观和乐观两种情景，并猜测未来会兼有两者。在乐观的情景下，他可以设想人工智能拓宽可供探索的问题类型。他解释说，有时你有一条思路，感觉只有百分之五的成功可能。你也许会想：“我不想研究这个，因为我要花上一辈子才能知道它是否可行。”费弗曼说：“但这和‘好吧，它有百分之五的成功概率，我只用两天就能知道结果’完全不同。”“我想人们会变得更有勇气，更有想象力，也得到解放。”他说，以前数学家既要有原创性，也要有强大的技术能力；他认识过一位极具原创性的数学家，却困在教授一年级课程的工作之中。“我认为人工智能会接管技术能力这一部分。”费弗曼说，“我们数学家感到焦虑是很自然的。但我认为，人工智能有可能成为推动进步的巨大加速器，而我们的任务是适应这种新的数学研究方式。”\n\n“我觉得菲尔兹奖得主们的公开信很有价值。”麻省理工学院的数学家约翰·厄舍尔告诉我，“不过我也理解，这种观点在数学界之外可能不太容易被接受。我看到有人说：‘我们这么快就取得癌症研究的答案了，还得为了学科发展放慢速度！’”厄舍尔与阿尔珀格是好朋友。他记得三四年前阿尔珀格说过，人工智能将终结他们所熟悉的数学。“我当时觉得他完全失去理智了。”厄舍尔说。\n\n高斯消元法中的一个深奥问题，已经吸引厄舍尔多年。在十年间，他形成了一套研究方案，自信最终能够解决它。然而，随着借助人工智能解决埃尔德什问题的成果开始陆续出现在网上，他担心自己快来不及了。“于是我开始加紧推进。”他说，“一位博士后里哈夫·沙阿在帮助我。”不到一周，沙阿就告诉厄舍尔，“他听到传言，说有人正把大量算力投入高斯消元法中的问题”，并认为他们应该考虑使用人工智能。厄舍尔同意了。“所以我每个月付了两百美元之类的费用。”他说。他们使用了 GPT-5.6 Sol 和 Claude Fable 5。\n\n厄舍尔带我回顾了与人工智能的合作过程。“一开始我问它：‘你能解这道题吗？’它说不能，还说它甚至不相信我告诉它的命题是真的。”他回忆道，“我说：‘好吧，这里就有一个对象，具有你不相信会存在的那些性质。’”之后，他逐步把自己的研究计划中的步骤输入模型。这样的“对话”来来回回：厄舍尔沿着既定研究计划的方向推动人工智能，而人工智能以一种令人烦躁、阿谀奉承的语气回应。他要求它改用直截了当、诚实的语气。最终，一个正确却“非常、非常难看”的结果“冒了出来”。\n\n埃尔德什把那些格外简洁而优美、能带来深刻洞见的证明称为“直接来自那本书”，意指上帝之书；虽然他并不相信上帝存在，还把上帝称为 S.F.，即“至高法西斯主义者”。埃尔德什十九岁时发表的第一篇数学论文，是关于素数的切比雪夫定理的一份证明。这一定理此前已有人证明，但埃尔德什给出了一份更简单、更精练，也更富启发性的证明。人工智能写出的证明（至少目前）通常与这种“来自那本书”的证明相去甚远。厄舍尔看到人工智能辅助生成的证明时说：“我当时想，好吧，我们可以通过人的工作把这个东西改造成一份漂亮而直观的证明。”厄舍尔与沙阿发表了研究成果，还在详细的文末注释中注明，哪些步骤完全由人完成，哪些步骤得到人工智能的辅助。\n\n厄舍尔的研究计划最终产生了新颖而重要的成果。沙阿求职时也将拥有一篇有分量的论文。然而厄舍尔并没有感到喜悦。“我得说清楚：这对我来说一点也不好玩。”他说，“乐趣在于把问题交给这个计算机程序之前。但跟人工智能讨论它？一点都不好玩。”他回忆自己小时候爱上逻辑谜题。他喜欢的，是身处未知之中，努力寻找前进的道路。“有趣的部分恰恰是还不理解，以及为理解而努力的过程。”他说，“把所有答案都写在眼前，反而是最无趣的部分。”\n\n厄舍尔提出，数学“一直过着某种双重生活”，而人工智能带来的压力让这种状况显露出来。在学科之外的人看来，数学很重要，即使在最抽象的层面，最终也经常催生各种意想不到的应用，比如公钥密码学和全球定位系统。“这是人们想申请研究经费时讲的故事。”厄舍尔说，“但这个故事不是真的。从来就不是真的。”或者说，至少在很大程度上不是真的。厄舍尔推测，每位数学家都把自己放在科学家与艺术家之间的某个连续谱上。“我所说的更偏向科学家的方式，就是努力尽可能快、尽可能远地推进知识前沿。”他告诉我，“而艺术家的视角则是：让我做些美丽而令人享受的事情，摆弄这些对象；这个过程本身就确实是一件快乐的事。”\n\n厄舍尔作为数学家的经历很不寻常。他曾在巴尔的摩乌鸦队打过三年职业美式橄榄球，同时攻读麻省理工学院的博士学位。他的妻子是本刊的一名作者。我问他接下来打算做什么。“嗯，我们准备养一条狗。”他说，“而且我的研究领域里还有大量数学问题可以做。”他的一些学生想借助人工智能开展研究，他对此没意见；另一些学生不想用，他也没意见。（“我有两个拒绝人工智能的‘纯素主义者’。”他说。）\n\n陶哲轩也告诉我，数学具有实际用途这种叙事，充其量只说对了一半。他自己的部分研究曾帮助降低磁共振成像的成本并加快速度；但大部分研究出于好奇、惊奇与玩乐。他给我讲了数学家约翰·康威的故事。两人在普林斯顿相识，康威的办公室堆满了本质上是谜题与玩具的物件。“我记得有一次他想学会如何看见四维空间中的东西。”陶哲轩说，“他推理说，既然我们的眼睛实际上只能看见二维”——双眼之间的距离会产生视差，让我们仿佛具有三维视觉——“于是他发明了一个奇怪的潜望镜装置，像护目镜一样，里面装有反射镜，使视差不只出现在水平方向，还能出现在垂直方向。他觉得这样或许就能看见四维空间。”康威造出了这台装置，戴着它四处走动，看上去像个疯狂科学家。“但他说，这东西带给他的唯一结果就是头痛。”陶哲轩告诉我。\n\n陶哲轩从未解出埃尔德什1985年与他分享的那道题。2010年，惠·阮和武文完成了它。不过，陶哲轩确实解决了另一道著名的埃尔德什问题，它大约提出于1930年，被称作“埃尔德什差异问题”。这是那位匈牙利数学家最喜爱的问题之一。据说他经常提起，尤其在生命的最后几年。可以把它想象成这样一个问题：无限次地抛硬币，若观察每隔两个、三个或任意固定间隔所取出的结果，这个序列是否不可避免地会变得“不平衡”？另一位数学家詹姆斯·格赖姆把它改编成更易理解的谜题故事：一个人被困在前方愤怒的蛇群与后方陡峭的悬崖之间。抛硬币的结果对应向前或向后迈步，问题是此人能否幸存。你可以上网搜索答案，也可以先自己试着玩一玩这道题。♦",
+    "notes": [
+      {
+        "term": "stumped",
+        "ipa": "/stʌmpt/",
+        "meaning": "难住；使束手无策",
+        "definition": "Unable to solve or answer something despite trying.",
+        "french": "mettre dans l’embarras ; laisser perplexe",
+        "context": "描述许多数学难题长期得不到解决。"
+      },
+      {
+        "kind": "person",
+        "term": "Terence Tao",
+        "aliases": [
+          "Terence Tao",
+          "Tao"
+        ],
+        "meaning": "陶哲轩，澳大利亚裔数学家，美国加州大学洛杉矶分校教授，2006年菲尔兹奖得主。",
+        "definition": "A mathematician at UCLA and a 2006 Fields Medal recipient, known for work in analysis, number theory, partial differential equations, and combinatorics.",
+        "french": "",
+        "context": "全文核心人物：讨论人工智能对数学研究、学术共同体与研究生培养的影响。",
+        "ipa": ""
+      },
+      {
+        "term": "theorems",
+        "ipa": "/ˈθɪərəmz/",
+        "meaning": "定理",
+        "definition": "Mathematical statements established as true by rigorous proofs.",
+        "french": "des théorèmes（阳性复数）",
+        "context": "数学中的可证明命题；与猜想不同。"
+      },
+      {
+        "term": "invoked",
+        "ipa": "/ɪnˈvoʊkt/",
+        "meaning": "援引；引用",
+        "definition": "Cited or referred to as an authority or familiar expression.",
+        "french": "invoquer ; citer",
+        "context": "指埃尔德什经常引用“咖啡变定理”的说法。"
+      },
+      {
+        "kind": "person",
+        "term": "Paul Erdős",
+        "aliases": [
+          "Paul Erdős",
+          "Erdős"
+        ],
+        "meaning": "保罗·埃尔德什，匈牙利数学家，以组合数学、数论和广泛的合作研究闻名。",
+        "definition": "A Hungarian mathematician known for number theory, combinatorics, and extensive mathematical collaboration.",
+        "french": "",
+        "context": "留下大量悬而未决的数学问题，成为文章讨论人工智能解题的起点。",
+        "ipa": ""
+      },
+      {
+        "term": "amphetamines",
+        "ipa": "/æmˈfetəmiːnz/",
+        "meaning": "安非他命类兴奋剂",
+        "definition": "Stimulant drugs that act on the central nervous system.",
+        "french": "des amphétamines（阴性复数）",
+        "context": "描述埃尔德什的生活习惯。"
+      },
+      {
+        "term": "on account of",
+        "ipa": "",
+        "meaning": "由于；因为",
+        "definition": "Because of a stated reason.",
+        "french": "en raison de ; à cause de",
+        "context": "这里说明部分问题久未解决是因为研究关注不足。"
+      },
+      {
+        "term": "bounties",
+        "ipa": "/ˈbaʊntiz/",
+        "meaning": "悬赏奖金",
+        "definition": "Rewards offered for completing a particular task.",
+        "french": "des primes（阴性复数）",
+        "context": "埃尔德什为攻克自己提出的问题设立奖金。"
+      },
+      {
+        "term": "hedge-fund managers",
+        "ipa": "",
+        "meaning": "对冲基金经理",
+        "definition": "Professionals who manage investment funds that use flexible strategies.",
+        "french": "des gérants de fonds spéculatifs",
+        "context": "文章以此与从事纯数学研究的职业选择形成对照。"
+      },
+      {
+        "term": "degrees of separation",
+        "ipa": "",
+        "meaning": "间隔层数；关系链的距离",
+        "definition": "The number of intermediate links connecting two people.",
+        "french": "des degrés de séparation",
+        "context": "埃尔德什数统计数学论文合作关系的层数。"
+      },
+      {
+        "term": "epsilons",
+        "ipa": "/ˈepsɪlɑːnz/",
+        "meaning": "ε；希腊字母 epsilon 的复数",
+        "definition": "The plural of epsilon, a Greek letter commonly used to denote a small positive quantity in mathematics.",
+        "french": "des epsilons（阳性复数）",
+        "context": "埃尔德什给孩子们的昵称，带有数学意味。"
+      },
+      {
+        "term": "prodigy",
+        "ipa": "/ˈprɑːdədʒi/",
+        "meaning": "神童",
+        "definition": "A young person with exceptionally advanced ability in a field.",
+        "french": "un enfant prodige",
+        "context": "形容年幼时已学习大学数学的陶哲轩。"
+      },
+      {
+        "term": "reiterated",
+        "ipa": "/riˈɪtəreɪtɪd/",
+        "meaning": "重申；再次说明",
+        "definition": "Repeated a statement or idea, especially to emphasize it.",
+        "french": "réitérer",
+        "context": "埃尔德什在信中再次写下与陶哲轩讨论过的问题。"
+      },
+      {
+        "term": "sequence of integers",
+        "ipa": "",
+        "meaning": "整数序列",
+        "definition": "An ordered list of integers, often indexed by position.",
+        "french": "une suite d’entiers",
+        "context": "原文列出埃尔德什题目的部分数学形式。"
+      },
+      {
+        "kind": "person",
+        "term": "Thomas Bloom",
+        "aliases": [
+          "Thomas Bloom"
+        ],
+        "meaning": "托马斯·布卢姆，数学家、埃尔德什问题汇总站点的创建者。",
+        "definition": "A mathematician who created a website collecting unsolved Erdős problems.",
+        "french": "",
+        "context": "其网站帮助追踪尚未解决的埃尔德什问题。",
+        "ipa": ""
+      },
+      {
+        "term": "fleeting",
+        "ipa": "/ˈfliːtɪŋ/",
+        "meaning": "短暂的；转瞬即逝的",
+        "definition": "Lasting for a very short time.",
+        "french": "fugace ; éphémère",
+        "context": "用于描述解决容易题目带来的短暂乐趣。"
+      },
+      {
+        "term": "unbounded",
+        "ipa": "/ʌnˈbaʊndɪd/",
+        "meaning": "无界限的；没有限制的",
+        "definition": "Without a clear limit or boundary.",
+        "french": "illimité ; sans bornes",
+        "context": "形容最近几个月对人工智能与数学的讨论规模。"
+      },
+      {
+        "term": "venerated",
+        "ipa": "/ˈvenəreɪtɪd/",
+        "meaning": "备受敬仰的",
+        "definition": "Regarded with great respect.",
+        "french": "vénéré ; très respecté",
+        "context": "描述陶哲轩的学术地位。"
+      },
+      {
+        "term": "Fields Medal",
+        "ipa": "",
+        "meaning": "菲尔兹奖",
+        "definition": "A prestigious international award recognizing outstanding achievements in mathematics.",
+        "french": "la médaille Fields（阴性）",
+        "context": "陶哲轩于2006年获奖；文章多次提到该奖得主。"
+      },
+      {
+        "term": "benchmarks",
+        "ipa": "/ˈbentʃmɑːrks/",
+        "meaning": "评测基准；能力测试标准",
+        "definition": "Standard tasks or measurements used to evaluate performance.",
+        "french": "des critères de référence ; des tests de référence",
+        "context": "人工智能公司用数学题衡量模型能力。"
+      },
+      {
+        "term": "digitized",
+        "ipa": "/ˈdɪdʒɪtaɪzd/",
+        "meaning": "数字化的；转换成可供计算机处理的形式",
+        "definition": "Converted into a digital representation.",
+        "french": "numérisé",
+        "context": "说明数学证明适合计算机处理与检验。"
+      },
+      {
+        "term": "conspicuously",
+        "ipa": "/kənˈspɪkjuəsli/",
+        "meaning": "明显地；引人注意地",
+        "definition": "In a way that is easy to notice.",
+        "french": "manifestement ; visiblement",
+        "context": "形容早期人工智能在基础数学上的表现很差。"
+      },
+      {
+        "term": "L.L.M.s",
+        "ipa": "/ˌel el ˈemz/",
+        "meaning": "大语言模型",
+        "definition": "Large language models: AI systems trained to process and generate language.",
+        "french": "des grands modèles de langage（阳性复数）",
+        "context": "指出大语言模型的解题能力与人类并不完全一致。"
+      },
+      {
+        "term": "orthogonal",
+        "ipa": "/ɔːrˈθɑːɡənəl/",
+        "meaning": "正交的；此处引申为截然不同的",
+        "definition": "Perpendicular in mathematics; figuratively, unrelated or operating along a different dimension.",
+        "french": "orthogonal",
+        "context": "陶哲轩借数学术语强调人工智能与人类思考路径不同。"
+      },
+      {
+        "term": "undergraduate",
+        "ipa": "/ˌʌndərˈɡrædʒuət/",
+        "meaning": "本科生",
+        "definition": "A university student studying for a first degree.",
+        "french": "un étudiant de premier cycle",
+        "context": "用于比较人工智能证明与人类读者的理解难度。"
+      },
+      {
+        "term": "International Mathematical Olympiad",
+        "ipa": "",
+        "meaning": "国际数学奥林匹克竞赛",
+        "definition": "An international mathematics competition for pre-university students.",
+        "french": "les Olympiades internationales de mathématiques（阴性复数）",
+        "context": "人工智能在这一竞赛中的成绩被用作数学能力指标。"
+      },
+      {
+        "term": "M.O.",
+        "ipa": "/ˌem ˈoʊ/",
+        "meaning": "行事方式；惯常做法",
+        "definition": "An abbreviation of modus operandi, meaning a typical way of operating.",
+        "french": "le mode opératoire（阳性）",
+        "context": "作者对比数学家公开研究过程与人工智能公司的保密做法。"
+      },
+      {
+        "kind": "person",
+        "term": "Allen Knutson",
+        "aliases": [
+          "Allen Knutson"
+        ],
+        "meaning": "艾伦·克努森，美国数学家，陶哲轩的长期朋友与合作者。",
+        "definition": "A mathematician and longtime friend and collaborator of Terence Tao.",
+        "french": "",
+        "context": "回忆陶哲轩少年时参加国际数学奥林匹克竞赛的故事。",
+        "ipa": ""
+      },
+      {
+        "term": "attention bottleneck",
+        "ipa": "",
+        "meaning": "注意力瓶颈",
+        "definition": "A limitation caused by too little attention or effort being allocated to a problem.",
+        "french": "un goulot d’étranglement de l’attention",
+        "context": "陶哲轩指出部分难题并非真正困难，而是无人投入精力。"
+      },
+      {
+        "term": "unit-distance problem",
+        "ipa": "",
+        "meaning": "单位距离问题",
+        "definition": "A combinatorial-geometry problem about configurations of points and pairs separated by a fixed unit distance.",
+        "french": "le problème des distances unitaires",
+        "context": "文章提到人工智能尝试解决的埃尔德什第90号问题。"
+      },
+      {
+        "term": "combinatorics",
+        "ipa": "/kəmˌbaɪnəˈtɔːrɪks/",
+        "meaning": "组合数学",
+        "definition": "The branch of mathematics studying discrete structures, counting, arrangements, and configurations.",
+        "french": "la combinatoire（阴性）",
+        "context": "既是单位距离问题所属的领域，也是陶哲轩的主要研究方向之一。"
+      },
+      {
+        "term": "Navier-Stokes existence-and-smoothness problem",
+        "ipa": "",
+        "meaning": "纳维－斯托克斯方程存在性与光滑性问题",
+        "definition": "A Millennium Prize Problem concerning global regularity or finite-time breakdown of solutions to the three-dimensional Navier–Stokes equations.",
+        "french": "le problème d’existence et de régularité des équations de Navier–Stokes",
+        "context": "涉及偏微分方程及流体力学；陶哲轩的研究背景涵盖非线性偏微分方程。"
+      },
+      {
+        "term": "Millennium Prize Problems",
+        "ipa": "",
+        "meaning": "千禧年大奖难题",
+        "definition": "Seven major mathematics problems announced by the Clay Mathematics Institute in 2000, each with a prize.",
+        "french": "les problèmes du prix du millénaire",
+        "context": "其中包括纳维－斯托克斯方程存在性与光滑性问题。"
+      },
+      {
+        "term": "fractal-like",
+        "ipa": "/ˈfræktəl laɪk/",
+        "meaning": "类似分形的",
+        "definition": "Resembling a fractal, with structures that recur at different scales.",
+        "french": "de type fractal ; semblable à une fractale",
+        "context": "描述《神奈川冲浪里》中大小波浪的相似形状。"
+      },
+      {
+        "term": "bare-bones",
+        "ipa": "",
+        "meaning": "极简的；只有最基本要素的",
+        "definition": "Containing only the most essential features.",
+        "french": "minimaliste ; rudimentaire",
+        "context": "陶哲轩用 PowerPoint 做出的简单演示图。"
+      },
+      {
+        "term": "referee submissions",
+        "ipa": "",
+        "meaning": "审阅投稿；进行同行评审",
+        "definition": "To evaluate submitted academic work for publication.",
+        "french": "évaluer des manuscrits soumis",
+        "context": "描述数学期刊依赖研究人员自愿评审。"
+      },
+      {
+        "term": "slop",
+        "ipa": "/slɑːp/",
+        "meaning": "低质量、批量生成的内容",
+        "definition": "Low-quality material, especially mass-produced AI-generated content.",
+        "french": "du contenu de mauvaise qualité généré en masse",
+        "context": "指大量低质量人工智能生成论文及证明。"
+      },
+      {
+        "term": "deliberative process",
+        "ipa": "",
+        "meaning": "审慎思考的过程",
+        "definition": "A process involving careful reflection and consideration.",
+        "french": "un processus de délibération",
+        "context": "陶哲轩认为新的数学问题会从长期思考中产生。"
+      },
+      {
+        "term": "precursor",
+        "ipa": "/priˈkɜːrsər/",
+        "meaning": "前身；先驱事物",
+        "definition": "Something that existed before and helped lead to a later development.",
+        "french": "un précurseur",
+        "context": "ARPANET 被称为互联网的前身。"
+      },
+      {
+        "term": "unadorned",
+        "ipa": "/ˌʌnəˈdɔːrnd/",
+        "meaning": "没有装饰的；朴素的",
+        "definition": "Without decoration or embellishment.",
+        "french": "sans ornement ; dépouillé",
+        "context": "描述陶哲轩的办公室。"
+      },
+      {
+        "kind": "person",
+        "term": "Elias Menachem Stein",
+        "aliases": [
+          "Elias M. Stein"
+        ],
+        "meaning": "埃利亚斯·M. 斯坦，数学家，以调和分析研究闻名，亦为陶哲轩的博士导师。",
+        "definition": "A mathematician known for harmonic analysis who supervised Terence Tao’s doctoral studies.",
+        "french": "",
+        "context": "他的名字出现在陶哲轩办公室的一本书名中。",
+        "ipa": ""
+      },
+      {
+        "term": "Diophantine Equations",
+        "ipa": "",
+        "meaning": "丢番图方程",
+        "definition": "Polynomial equations for which integer or rational solutions are sought.",
+        "french": "des équations diophantiennes（阴性复数）",
+        "context": "出现在陶哲轩办公室藏书的书名中，是数论中的重要问题类型。"
+      },
+      {
+        "term": "Elliptic Curves",
+        "ipa": "",
+        "meaning": "椭圆曲线",
+        "definition": "Smooth algebraic curves of genus one with a specified point, important in number theory and cryptography.",
+        "french": "des courbes elliptiques（阴性复数）",
+        "context": "以书名形式出现，是现代数论与代数几何的核心研究对象。"
+      },
+      {
+        "term": "decode",
+        "ipa": "/diːˈkoʊd/",
+        "meaning": "解码；破译",
+        "definition": "To convert coded information into understandable form.",
+        "french": "décoder",
+        "context": "陶哲轩提到已忘记如何解开孩子留下的密码。"
+      },
+      {
+        "term": "demeanor",
+        "ipa": "/dɪˈmiːnər/",
+        "meaning": "举止；神态",
+        "definition": "A person’s outward manner or behavior.",
+        "french": "une attitude ; un comportement",
+        "context": "用于描写陶哲轩平静、温和的形象。"
+      },
+      {
+        "term": "owing to",
+        "ipa": "",
+        "meaning": "由于；归因于",
+        "definition": "Because of.",
+        "french": "en raison de",
+        "context": "解释陶哲轩因工作繁忙而不常打网球。"
+      },
+      {
+        "term": "proliferating",
+        "ipa": "/prəˈlɪfəreɪtɪŋ/",
+        "meaning": "不断增加的；迅速增多的",
+        "definition": "Increasing rapidly in number or extent.",
+        "french": "se multipliant ; croissant",
+        "context": "形容陶哲轩的行政及学术职责持续增多。"
+      },
+      {
+        "term": "eccentricity",
+        "ipa": "/ˌeksenˈtrɪsəti/",
+        "meaning": "古怪；特立独行",
+        "definition": "Unconventional or unusual behavior or character.",
+        "french": "une excentricité",
+        "context": "对比其他著名数学家的个性与陶哲轩的生活方式。"
+      },
+      {
+        "kind": "person",
+        "term": "Maria Gaetana Agnesi",
+        "aliases": [
+          "Maria Agnesi"
+        ],
+        "meaning": "玛丽亚·加埃塔娜·阿涅西，十八世纪意大利数学家，著有早期微积分教科书。",
+        "definition": "An eighteenth-century Italian mathematician and author of an influential early calculus textbook.",
+        "french": "",
+        "context": "被用作具有独特人生经历的数学家例子。",
+        "ipa": ""
+      },
+      {
+        "term": "calculus",
+        "ipa": "/ˈkælkjələs/",
+        "meaning": "微积分",
+        "definition": "The branch of mathematics concerned with derivatives, integrals, and continuous change.",
+        "french": "le calcul infinitésimal（阳性）",
+        "context": "提及阿涅西编写的早期数学教科书。"
+      },
+      {
+        "kind": "person",
+        "term": "Kurt Gödel",
+        "aliases": [
+          "Kurt Gödel"
+        ],
+        "meaning": "库尔特·哥德尔，逻辑学家，以不完备性定理闻名。",
+        "definition": "A logician whose incompleteness theorems are foundational to mathematical logic.",
+        "french": "",
+        "context": "文章列举他晚年的古怪观念。",
+        "ipa": ""
+      },
+      {
+        "term": "incompleteness theorems",
+        "ipa": "",
+        "meaning": "不完备性定理",
+        "definition": "Gödel’s results showing fundamental limits on what sufficiently expressive consistent formal systems can prove internally.",
+        "french": "les théorèmes d’incomplétude（阳性复数）",
+        "context": "涉及数学逻辑和形式系统的根本局限。"
+      },
+      {
+        "kind": "person",
+        "term": "John Forbes Nash Jr.",
+        "aliases": [
+          "John Nash"
+        ],
+        "meaning": "约翰·纳什，美国数学家，以博弈论研究闻名。",
+        "definition": "An American mathematician known for major contributions to game theory.",
+        "french": "",
+        "context": "被列为曾退出社会交往的著名数学家。",
+        "ipa": ""
+      },
+      {
+        "term": "game theory",
+        "ipa": "",
+        "meaning": "博弈论",
+        "definition": "The mathematical study of strategic interactions among decision-makers.",
+        "french": "la théorie des jeux（阴性）",
+        "context": "介绍约翰·纳什的代表性贡献。"
+      },
+      {
+        "kind": "person",
+        "term": "Grigori Perelman",
+        "aliases": [
+          "Grigori Perelman"
+        ],
+        "meaning": "格里戈里·佩雷尔曼，俄罗斯数学家，以证明庞加莱猜想闻名。",
+        "definition": "A Russian mathematician known for proving the Poincaré conjecture.",
+        "french": "",
+        "context": "被列举为远离公众生活的数学家。",
+        "ipa": ""
+      },
+      {
+        "term": "Poincaré conjecture",
+        "ipa": "",
+        "meaning": "庞加莱猜想",
+        "definition": "A conjecture in topology characterizing the three-dimensional sphere among closed simply connected three-manifolds.",
+        "french": "la conjecture de Poincaré（阴性）",
+        "context": "佩雷尔曼解决的重要拓扑学问题。"
+      },
+      {
+        "term": "conjecture",
+        "ipa": "/kənˈdʒektʃər/",
+        "meaning": "猜想",
+        "definition": "A mathematical statement proposed as true but not yet proved.",
+        "french": "une conjecture",
+        "context": "数学研究中尚待证明或推翻的命题。"
+      },
+      {
+        "kind": "person",
+        "term": "Alexander Grothendieck",
+        "aliases": [
+          "Alexander Grothendieck"
+        ],
+        "meaning": "亚历山大·格罗滕迪克，数学家，以重塑代数几何基础闻名。",
+        "definition": "A mathematician whose work transformed the foundations of algebraic geometry.",
+        "french": "",
+        "context": "文章将他的隐居经历与陶哲轩进行对比。",
+        "ipa": ""
+      },
+      {
+        "term": "algebraic geometry",
+        "ipa": "",
+        "meaning": "代数几何",
+        "definition": "The study of geometric objects defined by polynomial equations, using algebraic methods.",
+        "french": "la géométrie algébrique（阴性）",
+        "context": "涉及格罗滕迪克的研究以及后文雅可比猜想证明的数学背景。"
+      },
+      {
+        "term": "qualifying exam",
+        "ipa": "",
+        "meaning": "资格考试",
+        "definition": "An examination required to progress toward doctoral candidacy in some graduate programs.",
+        "french": "un examen de qualification",
+        "context": "陶哲轩曾差点未通过博士阶段的资格考试。"
+      },
+      {
+        "term": "polymath",
+        "ipa": "/ˈpɑːlimæθ/",
+        "meaning": "博学通才；涉猎多领域的专家",
+        "definition": "A person with extensive knowledge and achievements across multiple fields.",
+        "french": "un polymathe",
+        "context": "突显陶哲轩在众多数学领域的贡献。"
+      },
+      {
+        "kind": "person",
+        "term": "Donald John Trump",
+        "aliases": [
+          "Donald Trump",
+          "Trump"
+        ],
+        "meaning": "唐纳德·特朗普，美国政治人物，文章所述时期的美国总统。",
+        "definition": "An American political figure and U.S. president during the period discussed in the article.",
+        "french": "",
+        "context": "其政府政策涉及数学研究经费和国际研究人员的签证问题。",
+        "ipa": ""
+      },
+      {
+        "term": "stipends",
+        "ipa": "/ˈstaɪpendz/",
+        "meaning": "津贴；生活补助",
+        "definition": "Regular payments, often supporting students or trainees.",
+        "french": "des allocations ; des bourses",
+        "context": "这里指维持研究生生活的经费。"
+      },
+      {
+        "kind": "person",
+        "term": "Mark Chen",
+        "aliases": [
+          "Mark Chen"
+        ],
+        "meaning": "马克·陈，OpenAI 高管。",
+        "definition": "An OpenAI executive.",
+        "french": "",
+        "context": "曾与陶哲轩共同参加由 OpenAI 组织的访谈。",
+        "ipa": ""
+      },
+      {
+        "term": "fireside chat",
+        "ipa": "",
+        "meaning": "非正式访谈；炉边谈话",
+        "definition": "An informal public conversation, often conducted as an interview.",
+        "french": "une conversation informelle",
+        "context": "指陶哲轩与 OpenAI 高管的公开对谈形式。"
+      },
+      {
+        "term": "bullish",
+        "ipa": "/ˈbʊlɪʃ/",
+        "meaning": "看涨的；此处指乐观支持的",
+        "definition": "Optimistic or confident about a development or prospect.",
+        "french": "optimiste ; enthousiaste",
+        "context": "OpenAI 在宣传视频里选用了陶哲轩较积极的言论。"
+      },
+      {
+        "term": "cognitive friction",
+        "ipa": "",
+        "meaning": "认知阻力",
+        "definition": "Mental effort and difficulty encountered while thinking, learning, or solving problems.",
+        "french": "la friction cognitive（阴性）",
+        "context": "文章核心概念：陶哲轩后来认为思考中的阻力也具有培养理解力的价值。"
+      },
+      {
+        "term": "evangelist",
+        "ipa": "/ɪˈvændʒəlɪst/",
+        "meaning": "热情倡导者；鼓吹者",
+        "definition": "A strong and vocal promoter of an idea or technology.",
+        "french": "un évangéliste ; un promoteur enthousiaste",
+        "context": "《量子杂志》用这个词形容陶哲轩对人工智能的态度。"
+      },
+      {
+        "term": "open-source",
+        "ipa": "",
+        "meaning": "开源的",
+        "definition": "Made available under terms allowing others to inspect, use, and often modify source code.",
+        "french": "à code source ouvert ; open source",
+        "context": "指可以开放共享和协作开发的人工智能工具。"
+      },
+      {
+        "term": "Equational Theories Project",
+        "ipa": "",
+        "meaning": "方程理论项目",
+        "definition": "A collaborative project investigating logical implications among systems of algebraic identities.",
+        "french": "le projet Equational Theories",
+        "context": "陶哲轩参与的大规模、人工智能辅助数学合作项目。"
+      },
+      {
+        "term": "mathematical implications",
+        "ipa": "",
+        "meaning": "数学蕴涵关系",
+        "definition": "Logical relations in which one mathematical statement entails another.",
+        "french": "des implications mathématiques（阴性复数）",
+        "context": "项目需要判定不同数学定律之间能否逻辑推出。"
+      },
+      {
+        "term": "muted optimism",
+        "ipa": "",
+        "meaning": "克制的乐观；有所保留的乐观",
+        "definition": "Cautious or restrained optimism.",
+        "french": "un optimisme mesuré",
+        "context": "描述陶哲轩早先对人工智能进入数学的态度。"
+      },
+      {
+        "term": "nonlinear dynamics",
+        "ipa": "",
+        "meaning": "非线性动力学",
+        "definition": "The study of systems whose behavior does not follow simple proportional or additive relations.",
+        "french": "la dynamique non linéaire（阴性）",
+        "context": "陶哲轩借此说明人工智能带来的影响不是越多就越好；也与他研究的非线性方程领域相关。"
+      },
+      {
+        "term": "monotone",
+        "ipa": "/ˈmɑːnətoʊn/",
+        "meaning": "单调的",
+        "definition": "In mathematics, changing consistently in one direction; here, used for oversimplified one-way reasoning.",
+        "french": "monotone",
+        "context": "指出不能把少量使用的效果简单外推到大量使用。"
+      },
+      {
+        "term": "autonomous machines",
+        "ipa": "",
+        "meaning": "自主机器",
+        "definition": "Machines capable of operating or acting with limited direct human control.",
+        "french": "des machines autonomes",
+        "context": "用于幻灯片中令人恐惧的自动化场景。"
+      },
+      {
+        "kind": "person",
+        "term": "Charles Lutwidge Dodgson",
+        "aliases": [
+          "Charles Dodgson",
+          "Lewis Carroll",
+          "Carroll"
+        ],
+        "meaning": "查尔斯·道奇森，笔名刘易斯·卡罗尔，英国数学家与《爱丽丝梦游仙境》作者。",
+        "definition": "A British mathematician and writer known by the pen name Lewis Carroll.",
+        "french": "",
+        "context": "作者将他的小说创作与数学研究的创造过程作比较。",
+        "ipa": ""
+      },
+      {
+        "term": "whimsy",
+        "ipa": "/ˈwɪmzi/",
+        "meaning": "奇思妙想；异想天开",
+        "definition": "Playful or fanciful imagination and ideas.",
+        "french": "la fantaisie（阴性）",
+        "context": "描述《爱丽丝梦游仙境》中的创造力。"
+      },
+      {
+        "term": "paradox",
+        "ipa": "/ˈpærədɑːks/",
+        "meaning": "悖论",
+        "definition": "An apparently contradictory or counterintuitive statement or situation.",
+        "french": "un paradoxe",
+        "context": "说明卡罗尔通过虚构故事探索的概念。"
+      },
+      {
+        "term": "akin to",
+        "ipa": "",
+        "meaning": "类似于",
+        "definition": "Similar in character or nature to.",
+        "french": "semblable à ; comparable à",
+        "context": "比较文学创作中的人物与数学家提出的概念。"
+      },
+      {
+        "kind": "person",
+        "term": "Andrew John Wiles",
+        "aliases": [
+          "Andrew Wiles",
+          "Wiles"
+        ],
+        "meaning": "安德鲁·怀尔斯，英国数学家，以证明费马大定理闻名。",
+        "definition": "A British mathematician best known for proving Fermat’s Last Theorem.",
+        "french": "",
+        "context": "用其证明展示新数学方法比最终答案更重要。",
+        "ipa": ""
+      },
+      {
+        "term": "Fermat’s Last Theorem",
+        "ipa": "",
+        "meaning": "费马大定理",
+        "definition": "The theorem that no positive integers a, b, c satisfy aⁿ + bⁿ = cⁿ for any integer n greater than two.",
+        "french": "le dernier théorème de Fermat",
+        "context": "文章借怀尔斯的证明说明数学进步来自方法创新。"
+      },
+      {
+        "term": "postulation",
+        "ipa": "/ˌpɑːstʃəˈleɪʃən/",
+        "meaning": "提出；假设的提出",
+        "definition": "The act of proposing a statement or assumption.",
+        "french": "la formulation d’une hypothèse",
+        "context": "指费马大定理最早被提出的时间。"
+      },
+      {
+        "kind": "person",
+        "term": "Iqra Altaf",
+        "aliases": [
+          "Iqra Altaf",
+          "Altaf"
+        ],
+        "meaning": "伊克拉·阿尔塔夫，数学博士后研究人员。",
+        "definition": "A postdoctoral mathematics researcher mentored by Terence Tao in the article.",
+        "french": "",
+        "context": "与陶哲轩讨论几何测度论中的反例。",
+        "ipa": ""
+      },
+      {
+        "term": "geometric-measure theory",
+        "ipa": "",
+        "meaning": "几何测度论",
+        "definition": "A field using measure theory to study geometric sets, sizes, and shapes, often in nonsmooth settings.",
+        "french": "la théorie géométrique de la mesure（阴性）",
+        "context": "阿尔塔夫正在研究的问题所属的数学领域，与分析学联系密切。"
+      },
+      {
+        "term": "counterexample",
+        "ipa": "/ˈkaʊntərɪɡzæmpəl/",
+        "meaning": "反例",
+        "definition": "A specific case that disproves a general mathematical claim.",
+        "french": "un contre-exemple",
+        "context": "既出现在阿尔塔夫的研究中，也出现在后文雅可比猜想的讨论中。"
+      },
+      {
+        "kind": "person",
+        "term": "Vladimir Arnold",
+        "aliases": [
+          "Vladimir Arnold"
+        ],
+        "meaning": "弗拉基米尔·阿诺尔德，俄罗斯数学家，以动力系统等领域的研究闻名。",
+        "definition": "A Russian mathematician known for work in dynamical systems and other areas.",
+        "french": "",
+        "context": "被陶哲轩引用，用来形容数学研究中不断尝试的过程。",
+        "ipa": ""
+      },
+      {
+        "term": "tropes",
+        "ipa": "/troʊps/",
+        "meaning": "常见套路；反复出现的叙事模式",
+        "definition": "Recurring conventions or recognizable patterns in storytelling.",
+        "french": "des tropes ; des motifs récurrents",
+        "context": "陶哲轩把熟悉电视剧套路比作学习数学中的方法模式。"
+      },
+      {
+        "term": "synopsis",
+        "ipa": "/sɪˈnɑːpsɪs/",
+        "meaning": "概要；剧情梗概",
+        "definition": "A brief summary of a story or its plot.",
+        "french": "un synopsis ; un résumé",
+        "context": "说明只读答案概述不足以学会创作或数学研究。"
+      },
+      {
+        "term": "formulaic",
+        "ipa": "/ˌfɔːrmjəˈleɪɪk/",
+        "meaning": "公式化的；套路化的",
+        "definition": "Following a familiar, predictable pattern.",
+        "french": "stéréotypé ; formulaïque",
+        "context": "指按固定叙事模式发展的电视剧。"
+      },
+      {
+        "term": "proof scarcity",
+        "ipa": "",
+        "meaning": "证明稀缺",
+        "definition": "A situation in which mathematical proofs are relatively difficult to produce and therefore highly valued.",
+        "french": "la rareté des démonstrations（阴性）",
+        "context": "陶哲轩对传统学术评价体系的概括。"
+      },
+      {
+        "term": "proof abundance",
+        "ipa": "",
+        "meaning": "证明充裕",
+        "definition": "A situation in which mathematical proofs become plentiful, partly through AI generation.",
+        "french": "l’abondance des démonstrations（阴性）",
+        "context": "描述人工智能生成证明使数学界转向筛选质量的阶段。"
+      },
+      {
+        "kind": "person",
+        "term": "Geordie Williamson",
+        "aliases": [
+          "Geordie Williamson",
+          "Williamson"
+        ],
+        "meaning": "乔迪·威廉姆森，澳大利亚悉尼大学数学家。",
+        "definition": "A mathematician at the University of Sydney.",
+        "french": "",
+        "context": "对比两项人工智能辅助数学成果对学术共同体的不同影响。",
+        "ipa": ""
+      },
+      {
+        "kind": "person",
+        "term": "Levent Alpöge",
+        "aliases": [
+          "Levent Alpöge",
+          "Alpöge"
+        ],
+        "meaning": "莱文特·阿尔珀格，数学家，文中任职于 Anthropic。",
+        "definition": "A mathematician working at Anthropic, as described in the article.",
+        "french": "",
+        "context": "发表雅可比猜想反例及阿达马矩阵成果，也卷入纳维－斯托克斯问题的争议。",
+        "ipa": ""
+      },
+      {
+        "term": "Jacobian conjecture",
+        "ipa": "",
+        "meaning": "雅可比猜想",
+        "definition": "A conjecture asserting that certain polynomial maps with constant nonzero Jacobian determinant have polynomial inverses.",
+        "french": "la conjecture jacobienne（阴性）",
+        "context": "涉及代数几何；文中讨论人工智能找到反例及数学家进一步理解证明。"
+      },
+      {
+        "term": "one-to-one mapping",
+        "ipa": "",
+        "meaning": "一一映射",
+        "definition": "A function that maps distinct inputs to distinct outputs; in some contexts a bijection is also onto.",
+        "french": "une application injective ; une correspondance biunivoque",
+        "context": "文章对雅可比猜想作出的直观简化，严格数学表述需要额外条件。"
+      },
+      {
+        "term": "proof digestion",
+        "ipa": "",
+        "meaning": "证明消化；理解并重构证明的过程",
+        "definition": "The process by which mathematicians study, interpret, and internalize a proof.",
+        "french": "l’assimilation d’une démonstration",
+        "context": "与单纯得到答案不同，强调数学家理解并吸收新方法。"
+      },
+      {
+        "kind": "person",
+        "term": "Semon Rezchikov",
+        "aliases": [
+          "Semon Rezchikov"
+        ],
+        "meaning": "谢蒙·列兹奇科夫，文中任职于巴纳德学院的数学研究人员。",
+        "definition": "A mathematics researcher affiliated with Barnard College in the article.",
+        "french": "",
+        "context": "将雅可比猜想反例转化为高中数学可理解的可视化展示。",
+        "ipa": ""
+      },
+      {
+        "term": "Hadamard matrices",
+        "ipa": "",
+        "meaning": "阿达马矩阵",
+        "definition": "Square matrices with entries +1 or −1 whose rows are pairwise orthogonal.",
+        "french": "des matrices de Hadamard（阴性复数）",
+        "context": "文章讨论新阶数阿达马矩阵被人工智能快速构造的事件。"
+      },
+      {
+        "term": "open-access",
+        "ipa": "",
+        "meaning": "开放获取的",
+        "definition": "Freely accessible to readers without subscription or payment barriers.",
+        "french": "en libre accès",
+        "context": "描述数学家共享预印本的网站 arxiv.org。"
+      },
+      {
+        "kind": "person",
+        "term": "Tristan Buckmaster",
+        "aliases": [
+          "Tristan Buckmaster",
+          "Buckmaster"
+        ],
+        "meaning": "特里斯坦·巴克马斯特，纽约大学数学教授。",
+        "definition": "A mathematics professor at New York University.",
+        "french": "",
+        "context": "对纳维－斯托克斯问题开展人工智能辅助研究，并与 OpenAI 发生署名争议。",
+        "ipa": ""
+      },
+      {
+        "term": "compute",
+        "ipa": "/kəmˈpjuːt/",
+        "meaning": "计算资源；算力",
+        "definition": "Computational processing capacity used to run models or algorithms.",
+        "french": "la puissance de calcul（阴性）",
+        "context": "指 OpenAI 为计算数学证明投入的大量资源。"
+      },
+      {
+        "kind": "person",
+        "term": "Sébastien Bubeck",
+        "aliases": [
+          "Sébastien Bubeck",
+          "Bubeck"
+        ],
+        "meaning": "塞巴斯蒂安·布贝克，文中负责 OpenAI 相关数学研究团队。",
+        "definition": "A researcher leading the OpenAI team discussed in the article.",
+        "french": "",
+        "context": "在巴克马斯特叙述的论文署名争议中被提及。",
+        "ipa": ""
+      },
+      {
+        "term": "authorship",
+        "ipa": "/ˈɔːθərʃɪp/",
+        "meaning": "作者身份；论文署名资格",
+        "definition": "Recognition as an author of a published work.",
+        "french": "le statut d’auteur ; la qualité d’auteur",
+        "context": "指围绕数学论文作者名单产生的争议。"
+      },
+      {
+        "term": "proxy",
+        "ipa": "/ˈprɑːksi/",
+        "meaning": "替代指标；代理指标",
+        "definition": "An indirect measure used in place of the primary objective.",
+        "french": "un indicateur indirect ; une mesure de substitution",
+        "context": "公开信认为解题数量只是衡量数学理解的一种间接手段。"
+      },
+      {
+        "term": "decoupling",
+        "ipa": "/diːˈkʌplɪŋ/",
+        "meaning": "脱钩；彼此分离",
+        "definition": "Becoming separated from something previously connected.",
+        "french": "le découplage（阳性）",
+        "context": "形容得到答案与理解其数学意义不再同步。"
+      },
+      {
+        "term": "grappling",
+        "ipa": "/ˈɡræplɪŋ/",
+        "meaning": "努力应对；艰难处理",
+        "definition": "Struggling to understand or deal with a difficult issue.",
+        "french": "se confronter à ; faire face à",
+        "context": "威廉姆森认为数学界尚未充分面对人工智能带来的变化。"
+      },
+      {
+        "kind": "person",
+        "term": "Socrates",
+        "aliases": [
+          "Socrates"
+        ],
+        "meaning": "苏格拉底，古希腊哲学家。",
+        "definition": "An ancient Greek philosopher known for his influence on Western philosophy.",
+        "french": "",
+        "context": "用其对文字书写的担忧作历史类比。",
+        "ipa": ""
+      },
+      {
+        "term": "off-loading",
+        "ipa": "/ˌɔːfˈloʊdɪŋ/",
+        "meaning": "外包；转交他者承担",
+        "definition": "Transferring a task or burden to an external system or person.",
+        "french": "l’externalisation（阴性）",
+        "context": "公开信认为人工智能可能使人类把思考本身外包。"
+      },
+      {
+        "term": "oral tradition",
+        "ipa": "",
+        "meaning": "口述传统；口耳相传的传统",
+        "definition": "Knowledge or culture transmitted through speech and direct exchange.",
+        "french": "une tradition orale",
+        "context": "强调数学知识通过交流、教学与讨论传播。"
+      },
+      {
+        "kind": "person",
+        "term": "Charles Louis Fefferman",
+        "aliases": [
+          "Charlie Fefferman",
+          "Fefferman"
+        ],
+        "meaning": "查尔斯（查理）·费弗曼，普林斯顿大学数学家，菲尔兹奖得主。",
+        "definition": "A Princeton mathematician and Fields Medal recipient known for work in analysis.",
+        "french": "",
+        "context": "讨论纳维－斯托克斯问题证明的可靠性，以及人工智能对研究的可能影响。",
+        "ipa": ""
+      },
+      {
+        "term": "conceived",
+        "ipa": "/kənˈsiːvd/",
+        "meaning": "构思出；最初提出",
+        "definition": "Developed an idea or plan mentally.",
+        "french": "concevoir ; imaginer",
+        "context": "指相关数学方法最先由人类研究人员提出。"
+      },
+      {
+        "kind": "person",
+        "term": "Diego Córdoba",
+        "aliases": [
+          "Diego Córdoba",
+          "Córdoba"
+        ],
+        "meaning": "迭戈·科尔多瓦，数学家，曾师从费弗曼。",
+        "definition": "A mathematician and former student of Charles Fefferman.",
+        "french": "",
+        "context": "其研究思路被文中称为人工智能证明所依赖的方法来源之一。",
+        "ipa": ""
+      },
+      {
+        "kind": "person",
+        "term": "Luis Martínez-Zoroa",
+        "aliases": [
+          "Luis Martínez-Zoroa"
+        ],
+        "meaning": "路易斯·马丁内斯－索罗亚，数学研究人员，曾师从科尔多瓦。",
+        "definition": "A mathematics researcher and former student of Diego Córdoba.",
+        "french": "",
+        "context": "其研究思路与纳维－斯托克斯问题的相关证明有关。",
+        "ipa": ""
+      },
+      {
+        "kind": "person",
+        "term": "John Urschel",
+        "aliases": [
+          "John Urschel",
+          "Urschel"
+        ],
+        "meaning": "约翰·厄舍尔，麻省理工学院数学家，曾是职业美式橄榄球运动员。",
+        "definition": "An MIT mathematician and former professional American-football player.",
+        "french": "",
+        "context": "描述他如何使用人工智能研究高斯消元法，以及这种经历对研究乐趣的影响。",
+        "ipa": ""
+      },
+      {
+        "term": "Gaussian elimination",
+        "ipa": "",
+        "meaning": "高斯消元法",
+        "definition": "An algorithm for solving linear systems by transforming matrices using elementary row operations.",
+        "french": "l’élimination de Gauss（阴性）",
+        "context": "线性代数中的基本方法；厄舍尔研究其更深层的数学问题。"
+      },
+      {
+        "term": "research protocol",
+        "ipa": "",
+        "meaning": "研究方案；研究步骤规范",
+        "definition": "A structured plan or procedure for carrying out research.",
+        "french": "un protocole de recherche",
+        "context": "厄舍尔经过多年建立的解题计划。"
+      },
+      {
+        "kind": "person",
+        "term": "Rikhav Shah",
+        "aliases": [
+          "Rikhav Shah",
+          "Shah"
+        ],
+        "meaning": "里哈夫·沙阿，文中与约翰·厄舍尔合作研究的博士后。",
+        "definition": "A postdoctoral researcher collaborating with John Urschel.",
+        "french": "",
+        "context": "建议将人工智能工具引入他们的高斯消元法研究。",
+        "ipa": ""
+      },
+      {
+        "term": "irksome",
+        "ipa": "/ˈɜːrksəm/",
+        "meaning": "令人烦躁的；讨厌的",
+        "definition": "Annoying or irritating.",
+        "french": "agaçant ; irritant",
+        "context": "厄舍尔不喜欢模型附和的语气。"
+      },
+      {
+        "term": "sycophantic",
+        "ipa": "/ˌsɪkəˈfæntɪk/",
+        "meaning": "阿谀奉承的；一味附和的",
+        "definition": "Excessively flattering or agreeing to gain approval.",
+        "french": "obséquieux ; flagorneur",
+        "context": "形容人工智能对厄舍尔的回应语气。"
+      },
+      {
+        "term": "Chebyshev’s theorem",
+        "ipa": "",
+        "meaning": "切比雪夫定理",
+        "definition": "A theorem concerning the distribution of prime numbers, including bounds relevant to primes between n and 2n.",
+        "french": "le théorème de Tchebychev",
+        "context": "埃尔德什十九岁时给出其一种更简洁的证明。"
+      },
+      {
+        "term": "succinct",
+        "ipa": "/səkˈsɪŋkt/",
+        "meaning": "简洁而准确的",
+        "definition": "Expressed clearly in relatively few words.",
+        "french": "succinct ; concis",
+        "context": "形容埃尔德什给出的优雅数学证明。"
+      },
+      {
+        "term": "revelatory",
+        "ipa": "/ˌrevəˈleɪtəri/",
+        "meaning": "启发性的；揭示重要认识的",
+        "definition": "Revealing something previously hidden or not understood.",
+        "french": "révélateur",
+        "context": "强调好的证明带来洞见，而不只是给出结论。"
+      },
+      {
+        "term": "logic puzzles",
+        "ipa": "",
+        "meaning": "逻辑谜题",
+        "definition": "Problems solved primarily through deductive reasoning.",
+        "french": "des énigmes logiques（阴性复数）",
+        "context": "厄舍尔小时候喜欢独立思考逻辑题。"
+      },
+      {
+        "term": "public-key cryptography",
+        "ipa": "",
+        "meaning": "公钥密码学",
+        "definition": "Cryptography using a publicly shareable key and a related private key.",
+        "french": "la cryptographie à clé publique（阴性）",
+        "context": "数学研究在现实世界中可能产生的应用之一。"
+      },
+      {
+        "term": "spectrum",
+        "ipa": "/ˈspektrəm/",
+        "meaning": "连续谱；范围",
+        "definition": "A continuous range between two extremes.",
+        "french": "un spectre ; un continuum",
+        "context": "厄舍尔将数学家的自我认知置于科学家与艺术家之间。"
+      },
+      {
+        "kind": "person",
+        "term": "John Horton Conway",
+        "aliases": [
+          "John Conway",
+          "Conway"
+        ],
+        "meaning": "约翰·康威，英国数学家，以组合数学、博弈等领域的研究闻名。",
+        "definition": "A British mathematician known for work in combinatorics, game theory, and recreational mathematics.",
+        "french": "",
+        "context": "陶哲轩讲述他为感知四维空间制作装置的故事。",
+        "ipa": ""
+      },
+      {
+        "term": "parallax",
+        "ipa": "/ˈpærəlæks/",
+        "meaning": "视差",
+        "definition": "An apparent shift in an object’s position when viewed from different locations.",
+        "french": "la parallaxe（阴性）",
+        "context": "康威试图借助两个方向的视差想象四维空间。"
+      },
+      {
+        "term": "periscope",
+        "ipa": "/ˈperɪskoʊp/",
+        "meaning": "潜望镜",
+        "definition": "An optical device using mirrors or prisms to view objects from a displaced position.",
+        "french": "un périscope",
+        "context": "描述康威的镜面装置。"
+      },
+      {
+        "kind": "person",
+        "term": "Hoi Nguyen",
+        "aliases": [
+          "Hoi Nguyen"
+        ],
+        "meaning": "惠·阮，数学家，2010年与武文解决了文章提到的埃尔德什问题。",
+        "definition": "A mathematician who, with Van Vu, solved the Erdős problem discussed in the article in 2010.",
+        "french": "",
+        "context": "解决了埃尔德什在1985年向年幼陶哲轩提出的题目。",
+        "ipa": ""
+      },
+      {
+        "kind": "person",
+        "term": "Van Vu",
+        "aliases": [
+          "Van Vu"
+        ],
+        "meaning": "武文，数学家，2010年与惠·阮解决了文章提到的埃尔德什问题。",
+        "definition": "A mathematician who solved the cited Erdős problem with Hoi Nguyen in 2010.",
+        "french": "",
+        "context": "同为那道早期埃尔德什问题的解决者。",
+        "ipa": ""
+      },
+      {
+        "term": "Erdős discrepancy problem",
+        "ipa": "",
+        "meaning": "埃尔德什差异问题",
+        "definition": "A problem about the unbounded discrepancy of signed sequences along homogeneous arithmetic progressions.",
+        "french": "le problème de la discrépance d’Erdős",
+        "context": "陶哲轩解决的著名问题，与数论和组合数学相关。"
+      },
+      {
+        "kind": "person",
+        "term": "James Grime",
+        "aliases": [
+          "James Grime"
+        ],
+        "meaning": "詹姆斯·格赖姆，数学家及数学科普工作者。",
+        "definition": "A mathematician and mathematics communicator.",
+        "french": "",
+        "context": "把埃尔德什差异问题改写成蛇与悬崖的直观谜题。",
+        "ipa": ""
+      },
+      {
+        "term": "precipitous",
+        "ipa": "/prɪˈsɪpɪtəs/",
+        "meaning": "陡峭的；险峻的",
+        "definition": "Very steep, especially of a cliff or slope.",
+        "french": "escarpé ; abrupt",
+        "context": "描写谜题中人物身后的悬崖。"
+      }
+    ]
+  }
+}
