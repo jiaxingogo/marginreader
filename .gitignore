@@ -1,0 +1,6 @@
+node_modules/
+dist/
+public/articles/
+backups/
+*.zip
+.DS_Store

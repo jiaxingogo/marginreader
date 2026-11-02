@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "title": "A new perspective",
+  "intro": "",
+  "body": "Reading offers a new perspective.",
+  "analysis": {
+    "translation": "阅读提供了一个新的视角。",
+    "notes": [
+      {
+        "term": "perspective",
+        "ipa": "/pərˈspektɪv/",
+        "meaning": "视角；看待事物的方式",
+        "definition": "A particular way of considering something.",
+        "french": "un point de vue（阳性）",
+        "context": "这里指阅读带来的理解角度。"
+      }
+    ]
+  }
+}
