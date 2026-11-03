@@ -24,7 +24,7 @@ import {
   cachedProgress,
 } from "./reading";
 import { storageApi, BASE } from "./storage";
-const labels = { unread: "阅读", reading: "在读", done: "已读" };
+const labels = { unread: "未读", reading: "在读", done: "已读" };
 export default function Home() {
   const [view, V] = useState("home"),
     [items, I] = useState<Article[]>([]),
