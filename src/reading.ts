@@ -151,7 +151,12 @@ ${JSON.stringify(sample, null, 2)}
 
 普通词条省略 kind。term 使用原文中的词或短语，meaning 写中文释义，definition 写英文定义，french 写法语对应表达，context 用中文说明该词在此处的意思。单词提供 ipa，短语可省略。
 
-背景术语：如果理解某个制度、历史事件、政策、组织或专业概念有助于理解文章背景，设 kind 为 "background"。term 取原文中的完整名称或术语；meaning 解释概念，context 具体说明它与本文的关系。普通难词沿用普通词卡，同一术语不重复建卡。
+专业术语（kind 为 "background"）：默认使用普通词卡。只有同时满足以下两点才标为专业术语：
+1. 原文中的完整词或短语是某一领域对特定概念、制度、机制、方法或量的约定称谓，通常是名词或名词短语。
+2. 作者在此处确实使用了该领域的专门含义。能简明指出它属于哪个领域、具体指什么；仅凭文章主题或词汇难度不能判定。
+
+按原句区分义项。例如，化学中的 “coordination number”（配位数）可标为专业术语；“coordination between teams” 中的 “coordination” 是普通词。政治报道中，“electoral college” 指特定选举制度时可标为专业术语；“hammering” 表示猛烈批评、“pocketbook issues” 表示与个人经济状况相关的议题时，都用普通词卡。
+历史事件名、机构名、政策标题或缩写本身都不足以判为术语。若只是需要补充背景，在普通词卡的 context 中说明即可。难以确定专门义时省略 kind；一篇文章可以没有专业术语。若确属术语，term 取原文中的完整表达，meaning 解释其专门含义，context 说明它在本文中的作用，同一术语只建一张卡。
 
 公众人物注释规则：设 kind 为 "person"，以全名作为 term。aliases 列出文中实际出现且能明确指认该人的全名、姓、名、昵称等称呼，各称呼共用一张卡。meaning 和 definition 简述身份，context 说明此人与文中事件的关系。ipa 和 french 可为空。不要臆测身份或把有歧义的别称分给多个人。
 

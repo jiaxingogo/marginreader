@@ -24,7 +24,7 @@ import {
   cachedProgress,
 } from "./reading";
 import { storageApi, BASE } from "./storage";
-const labels = { unread: "未读", reading: "在读", done: "已读" };
+const labels = { unread: "阅读", reading: "在读", done: "已读" };
 export default function Home() {
   const [view, V] = useState("home"),
     [items, I] = useState<Article[]>([]),
@@ -813,13 +813,19 @@ export default function Home() {
                         <h3>
                           {n.term} <small>{n.ipa}</small>
                         </h3>
-                        <p className="meaning">{n.meaning}</p>
+                        {n.definition && (
+                          <p className="meaning" lang="en" style={{ fontSize: 14 }}>
+                            {n.definition}
+                          </p>
+                        )}
+                        <p className="definition" lang="zh">
+                          {n.meaning}
+                        </p>
                         {n.kind === "person" && (
                           <p className="person-aliases">
                             文中称呼：{n.aliases?.join("、")}
                           </p>
                         )}
-                        <p className="definition">{n.definition}</p>
                         <p className="french">
                           {n.french && "FR · "}
                           {n.french}
