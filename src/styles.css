@@ -465,7 +465,7 @@ textarea {
 }
 .source {
   font:
-    23px/1.95 Georgia,
+    19px/1.95 Georgia,
     serif;
   color: #2f3e30;
   white-space: pre-wrap;
@@ -871,7 +871,7 @@ iframe {
 }
 .imported-reader .source {
   font:
-    normal clamp(16px, 2vw, 23px)/1.89 Georgia,
+    normal clamp(16px, 2vw, 19px)/1.89 Georgia,
     "Times New Roman",
     serif;
   letter-spacing: -0.012em;
