@@ -237,18 +237,28 @@ export default function Home() {
       S(false);
     }
   }
-  async function file(f?: File) {
+  async function selectFiles(files: File[]) {
+    if (!files.length) return;
     P([]);
     FN("");
     M("");
-    if (!f) return;
+    S(true);
+    let currentName = "";
     try {
-      if (f.size > 10000000) throw Error("文件不能超过 10 MB。");
-      const rows = parseImport(JSON.parse(await f.text()));
-      P(rows);
-      FN(f.name);
-    } catch (e: any) {
-      M("未导入：" + e.message);
+      const articles: Article[] = [];
+      for (const file of files) {
+        currentName = file.name;
+        if (file.size > 10000000) throw Error("单个文件不能超过 10 MB。");
+        articles.push(...parseImport(JSON.parse(await file.text())));
+        if (articles.length > 200) throw Error("每批最多导入 200 篇文章。");
+      }
+      P(articles);
+      FN(files.map((file) => file.name).join("、"));
+    } catch (error) {
+      const detail = error instanceof Error ? error.message : String(error);
+      M(`本批尚未导入。请检查「${currentName}」：${detail}`);
+    } finally {
+      S(false);
     }
   }
   async function importAll() {
@@ -600,13 +610,15 @@ export default function Home() {
                 <label className="upload">
                   <Upload size={28} />
                   <b>选择分析文件或备份文件</b>
-                  <span>JSON · 最大 10 MB · 每次最多 200 篇</span>
+                  <span>可多选 JSON · 每个文件最大 10 MB · 每批最多 200 篇</span>
                   <input
                     aria-label="导入 JSON 文件"
                     type="file"
+                    multiple
+                    disabled={busy}
                     accept=".json,application/json"
                     onChange={(e) => {
-                      file(e.target.files?.[0]);
+                      selectFiles(Array.from(e.target.files ?? []));
                       e.target.value = "";
                     }}
                   />
@@ -770,6 +782,11 @@ export default function Home() {
               <div className="paperhead">
                 <p className="eyebrow">MAGAZINE READER / MARGIN NOTES</p>
                 <h1>{highlight(active.title || "未命名文章")}</h1>
+                {active.sourceUrl && (
+                  <a href={active.sourceUrl} target="_blank" rel="noopener noreferrer">
+                    阅读原文 ↗
+                  </a>
+                )}
                 {active.intro && (
                   <p className="intro">{highlight(active.intro)}</p>
                 )}
