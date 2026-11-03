@@ -11,6 +11,7 @@ export type Note = {
 export type Article = {
   id: string;
   title: string;
+  sourceUrl?: string;
   intro: string;
   body: string;
   created: number;
@@ -28,6 +29,12 @@ function str(v: unknown, name: string, max: number, optional = false) {
 }
 export function normalize(v: any): Article {
   if (!v || typeof v !== "object") throw Error("文章必须是 JSON 对象。");
+  const sourceUrl = str(v.sourceUrl, "原文链接", 8192, true).trim();
+  if (sourceUrl) {
+    const url = URL.canParse(sourceUrl) ? new URL(sourceUrl) : null;
+    if (!url || !["https:", "http:"].includes(url.protocol) || url.username || url.password)
+      throw Error("原文链接必须是完整的 HTTP 或 HTTPS 网址。");
+  }
   const body = str(v.body, "正文", 200000);
   if (!body.trim()) throw Error("正文不能为空。");
   let analysis: Article["analysis"];
@@ -97,6 +104,7 @@ export function normalize(v: any): Article {
     throw Error("阅读位置应在 0 到 1 之间。");
   return {
     id: typeof v.id === "string" && /^[a-f0-9-]{36}$/.test(v.id) ? v.id : "",
+    ...(sourceUrl ? { sourceUrl } : {}),
     title: str(v.title, "标题", 300, true),
     intro: str(v.intro, "序言", 20000, true),
     body,
@@ -125,6 +133,7 @@ export function parseImport(v: any) {
 export const sample = {
   schemaVersion: 1,
   title: "A new perspective",
+  sourceUrl: "",
   intro: "",
   body: "Reading offers a new perspective.",
   analysis: {
@@ -142,6 +151,8 @@ export const sample = {
 };
 export const prompt = `请根据我提供的文章生成可下载的 UTF-8 .json 文件。使用 schemaVersion: 1，基本结构如下：
 ${JSON.stringify(sample, null, 2)}
+
+若提供的材料（包括文章出处、分享链接或 Markdown 标题链接）中明确给出了这篇文章自身的完整 HTTP 或 HTTPS 地址，将其填入顶层 sourceUrl，保留原有路径和查询参数。不要把出版物首页、文中引用、图片或推荐文章的链接当作原文地址。没有明确地址时留空，不要根据标题猜测。
 
 保留标题、序言、正文及原有段落。title 和 intro 可为空。删去图注、摄影署名、图片来源、广告、订阅提示和导航，但保留正文中对图片的讨论。无法确定是否属于正文时保留原文。
 
