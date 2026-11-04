@@ -156,6 +156,7 @@ ${JSON.stringify(sample, null, 2)}
 根据可访问的历史对话、我问过的表达和阅读反馈选择需要解释的词汇。缺少依据时，按本文难度和本次额外要求选择。
 
 按首次出现顺序排列 analysis.notes。同一词条只列一次，匹配完整单词或短语，保留文中实际拼写和屈折形式。例如 demanding 中的 din 不算一次出现。不要给仅作为其他单词一部分的字符串建卡。
+带点缩写按完整拼写和原句含义辨认，保留内部圆点及原有末尾圆点。例如 M.O. 和 I.M.O. 是两个不同的表达。只有独立出现的 M.O. 才能作为 M.O. 词卡的依据；即使 I.M.O. 没有建卡，也不能拆出 M.O. 或将其列为别名。生成前逐条核对 term 和 aliases，确认至少有一处完整匹配且指代正确。
 
 普通词条省略 kind。term 使用原文中的词或短语，definition 用英文解释原句采用的义项，french 给出该义项的法语对应表达。所有类型的词卡都只在末尾的 context 中写中文评论：用一两句说明这个表达在原句中指什么、传达何种语气，或与文中事件有何关系。选最相关的一点即可，不要重复翻译英文定义，不要生成 meaning 字段。单词提供 ipa，短语可省略。
 
@@ -228,7 +229,15 @@ function termPattern(term: string) {
   const right = new RegExp(word + "$", "u").test(term)
     ? "(?!" + word + ")"
     : "";
-  return left + escaped + right;
+  // A period between initials is part of the abbreviation, not a word boundary.
+  const startsWithInitial = /^\p{Script=Latin}(?:\.|$)/u.test(term);
+  const endsWithInitial = /(?:^|\.)\p{Script=Latin}$/u.test(term);
+  const endsWithDottedInitial = /(?:^|\.)\p{Script=Latin}\.$/u.test(term);
+  const beforeInitial = startsWithInitial ? "(?<!\\p{Script=Latin}\\.)" : "";
+  let afterInitial = "";
+  if (endsWithDottedInitial) afterInitial = "(?!" + word + ")";
+  else if (endsWithInitial) afterInitial = "(?!\\.\\p{Script=Latin})";
+  return beforeInitial + left + escaped + right + afterInitial;
 }
 
 export function annotatedParts(text: string, notes: Note[]) {

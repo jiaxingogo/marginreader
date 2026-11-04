@@ -88,3 +88,11 @@ test("all sort options order correctly", () => {
     );
   }
 });
+
+test("dotted abbreviations match independently of other cards", () => {
+  const notes = [{ ...model.sample.analysis.notes[0], term: "M.O." }];
+  const body = "I.M.O. (M.O.), M.O.A. and M.O.";
+  const hits = model.annotatedParts(body, notes).filter(part => part.index >= 0);
+  assert.deepEqual(hits.map(part => part.text), ["M.O.", "M.O."]);
+  assert.equal(model.normalize({ body: "I.M.O.", analysis: { notes } }).analysis.notes.length, 0);
+});
