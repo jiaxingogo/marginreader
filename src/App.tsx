@@ -24,7 +24,7 @@ import {
   cachedProgress,
 } from "./reading";
 import { storageApi, BASE } from "./storage";
-const labels = { unread: "阅读", reading: "在读", done: "已读" };
+const labels = { unread: "未读", reading: "在读", done: "已读" };
 export default function Home() {
   const [view, V] = useState("home"),
     [items, I] = useState<Article[]>([]),
@@ -33,7 +33,7 @@ export default function Home() {
     [order, O] = useState("updated-desc"),
     [filter, F] = useState("all"),
     [busy, S] = useState(false),
-    [message, M] = useState(""),
+    [notice, setNotice] = useState<{ text: string } | null>(null),
     [loaded, L] = useState(false),
     [pending, P] = useState<Article[]>([]),
     [filename, FN] = useState(""),
@@ -48,6 +48,16 @@ export default function Home() {
   const flushProgress = useRef<() => void>(() => {});
   const position = useRef(0);
   const [recent, R] = useState<{ id: string; position: number } | null>(null);
+  function showNotice(text: string) {
+    setNotice(text ? { text } : null);
+  }
+
+  useEffect(() => {
+    if (!notice) return;
+    const timeout = window.setTimeout(() => setNotice(null), 3000);
+    return () => window.clearTimeout(timeout);
+  }, [notice]);
+
   function remember(id: string, value: number) {
     const entry = { id, position: value };
     R(entry);
@@ -91,7 +101,7 @@ export default function Home() {
     L(true);
   }
   useEffect(() => {
-    refresh().catch((e) => M(e.message));
+    refresh().catch((e) => showNotice(e.message));
   }, []);
   useEffect(() => {
     function protect(e: BeforeUnloadEvent) {
@@ -194,7 +204,7 @@ export default function Home() {
     D(false);
     history.pushState({}, "", BASE + (next === "home" ? "" : next + "/"));
     V(next);
-    M("");
+    showNotice("");
     window.scrollTo(0, 0);
   }
   function download(name: string, value: unknown) {
@@ -230,9 +240,9 @@ export default function Home() {
           articles: j.articles.map(restore),
         },
       );
-      M("备份已导出，包含全部文章、词汇注释、阅读状态、位置与笔记。");
+      showNotice("备份已导出，包含全部文章、词汇注释、阅读状态、位置与笔记。");
     } catch (e: any) {
-      M(e.message);
+      showNotice(e.message);
     } finally {
       S(false);
     }
@@ -241,7 +251,7 @@ export default function Home() {
     if (!files.length) return;
     P([]);
     FN("");
-    M("");
+    showNotice("");
     S(true);
     let currentName = "";
     try {
@@ -256,7 +266,7 @@ export default function Home() {
       FN(files.map((file) => file.name).join("、"));
     } catch (error) {
       const detail = error instanceof Error ? error.message : String(error);
-      M(`本批尚未导入。请检查「${currentName}」：${detail}`);
+      showNotice(`本批尚未导入。请检查「${currentName}」：${detail}`);
     } finally {
       S(false);
     }
@@ -268,11 +278,11 @@ export default function Home() {
       P([]);
       await refresh();
       nav("home");
-      M(
+      showNotice(
         `已导入 ${j.imported} 篇；跳过 ${j.skipped} 篇重复文章。已有记录不会被覆盖。`,
       );
     } catch (e: any) {
-      M(e.message + " 如已部分导入，可重试；重复文章会被跳过。");
+      showNotice(e.message + " 如已部分导入，可重试；重复文章会被跳过。");
     } finally {
       S(false);
     }
@@ -313,7 +323,7 @@ export default function Home() {
       SV("已保存到此浏览器 · " + new Date().toLocaleTimeString("zh-CN"));
       return true;
     } catch (e: any) {
-      M(e.message);
+      showNotice(e.message);
       return false;
     } finally {
       S(false);
@@ -403,7 +413,7 @@ export default function Home() {
       open(a, true, false);
     } else {
       V("home");
-      M("找不到这篇文章。若它只导入到另一台设备，请先在此设备导入文章或备份。");
+      showNotice("找不到这篇文章。若它只导入到另一台设备，请先在此设备导入文章或备份。");
     }
   }, [loaded, routeKey]);
   const lastRead = recent ? items.find((a) => a.id === recent.id) : undefined;
@@ -436,10 +446,10 @@ export default function Home() {
         </nav>
       </header>
       <main>
-        {message && (
+        {notice && (
           <div className="notice" role="status">
-            {message}
-            <button onClick={() => M("")}>×</button>
+            {notice.text}
+            <button onClick={() => showNotice("")}>×</button>
           </div>
         )}
         {view === "home" && (
@@ -585,7 +595,7 @@ export default function Home() {
               {!loaded && (
                 <div className="empty">
                   尚未载入文章。
-                  <button onClick={() => refresh().catch((e) => M(e.message))}>
+                  <button onClick={() => refresh().catch((e) => showNotice(e.message))}>
                     重新加载
                   </button>
                 </div>
@@ -690,9 +700,9 @@ export default function Home() {
                   onClick={async () => {
                     try {
                       await navigator.clipboard.writeText(currentPrompt);
-                      M("生成提示词已复制。");
+                      showNotice("生成提示词已复制。");
                     } catch {
-                      M("无法访问剪贴板，请下载生成说明。");
+                      showNotice("无法访问剪贴板，请下载生成说明。");
                     }
                   }}
                 >
@@ -783,8 +793,13 @@ export default function Home() {
                 <p className="eyebrow">MAGAZINE READER / MARGIN NOTES</p>
                 <h1>{highlight(active.title || "未命名文章")}</h1>
                 {active.sourceUrl && (
-                  <a href={active.sourceUrl} target="_blank" rel="noopener noreferrer">
-                    阅读原文 ↗
+                  <a
+                    className="source-link"
+                    href={active.sourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {active.sourceUrl}
                   </a>
                 )}
                 {active.intro && (
@@ -930,9 +945,9 @@ export default function Home() {
                     } catch {}
                     I((v) => v.filter((a) => a.id !== del.id));
                     DEL(null);
-                    M("文章已删除。");
+                    showNotice("文章已删除。");
                   } catch (e: any) {
-                    M(e.message);
+                    showNotice(e.message);
                     DEL(null);
                   } finally {
                     S(false);

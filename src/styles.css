@@ -835,6 +835,24 @@ iframe {
     serif;
   letter-spacing: -0.025em;
 }
+.imported-reader .paperhead .source-link {
+  display: inline-block;
+  max-width: 100%;
+  margin-top: 8px;
+  font: italic 14px/1.6 Georgia, "Times New Roman", serif;
+  color: #59675d;
+  overflow-wrap: anywhere;
+  text-decoration: underline;
+  text-decoration-color: #a6b6ab;
+  text-underline-offset: 0.2em;
+}
+
+.imported-reader .paperhead .source-link:hover,
+.imported-reader .paperhead .source-link:focus-visible {
+  color: #2c644c;
+  text-decoration-color: currentColor;
+}
+
 .imported-reader .paperhead .eyebrow {
   font-size: 11px;
   letter-spacing: 0.21em;
