@@ -1,6 +1,5 @@
 export type Note = {
   term: string;
-  meaning: string;
   definition: string;
   french: string;
   context: string;
@@ -81,7 +80,6 @@ export function normalize(v: any): Article {
               : n.kind === "background"
                 ? { kind: "background" as const }
                 : {}),
-            meaning: str(n.meaning, "中文释义", 5000),
             definition: str(n.definition, "英文定义", 5000, true),
             french: str(n.french, "法语对应表达", 5000, true),
             context: str(n.context, "语境补充", 5000, true),
@@ -141,10 +139,9 @@ export const sample = {
       {
         term: "perspective",
         ipa: "/pərˈspektɪv/",
-        meaning: "视角；看待事物的方式",
         definition: "A particular way of considering something.",
-        french: "un point de vue（阳性）",
-        context: "这里指阅读带来的理解角度。",
+        french: "un point de vue (n. m.)",
+        context: "这里强调阅读可以改变读者看待同一件事的方式。",
       },
     ],
   },
@@ -160,16 +157,16 @@ ${JSON.stringify(sample, null, 2)}
 
 按首次出现顺序排列 analysis.notes。同一词条只列一次，匹配完整单词或短语，保留文中实际拼写和屈折形式。例如 demanding 中的 din 不算一次出现。不要给仅作为其他单词一部分的字符串建卡。
 
-普通词条省略 kind。term 使用原文中的词或短语，meaning 写中文释义，definition 写英文定义，french 写法语对应表达，context 用中文说明该词在此处的意思。单词提供 ipa，短语可省略。
+普通词条省略 kind。term 使用原文中的词或短语，definition 用英文解释原句采用的义项，french 给出该义项的法语对应表达。所有类型的词卡都只在末尾的 context 中写中文评论：用一两句说明这个表达在原句中指什么、传达何种语气，或与文中事件有何关系。选最相关的一点即可，不要重复翻译英文定义，不要生成 meaning 字段。单词提供 ipa，短语可省略。
 
 专业术语（kind 为 "background"）：默认使用普通词卡。只有同时满足以下两点才标为专业术语：
 1. 原文中的完整词或短语是某一领域对特定概念、制度、机制、方法或量的约定称谓，通常是名词或名词短语。
 2. 作者在此处确实使用了该领域的专门含义。能简明指出它属于哪个领域、具体指什么；仅凭文章主题或词汇难度不能判定。
 
 按原句区分义项。例如，化学中的 “coordination number”（配位数）可标为专业术语；“coordination between teams” 中的 “coordination” 是普通词。政治报道中，“electoral college” 指特定选举制度时可标为专业术语；“hammering” 表示猛烈批评、“pocketbook issues” 表示与个人经济状况相关的议题时，都用普通词卡。
-历史事件名、机构名、政策标题或缩写本身都不足以判为术语。若只是需要补充背景，在普通词卡的 context 中说明即可。难以确定专门义时省略 kind；一篇文章可以没有专业术语。若确属术语，term 取原文中的完整表达，meaning 解释其专门含义，context 说明它在本文中的作用，同一术语只建一张卡。
+历史事件名、机构名、政策标题或缩写本身都不足以判为术语。若只是需要补充背景，在普通词卡的 context 中说明即可。难以确定专门义时省略 kind；一篇文章可以没有专业术语。若确属术语，term 取原文中的完整表达，definition 用英文解释其专门含义，context 说明它在本文中的作用，同一术语只建一张卡。
 
-公众人物注释规则：设 kind 为 "person"，以全名作为 term。aliases 列出文中实际出现且能明确指认该人的全名、姓、名、昵称等称呼，各称呼共用一张卡。meaning 和 definition 简述身份，context 说明此人与文中事件的关系。ipa 和 french 可为空。不要臆测身份或把有歧义的别称分给多个人。
+公众人物注释规则：设 kind 为 "person"，以全名作为 term。aliases 列出文中实际出现且能明确指认该人的全名、姓、名、昵称等称呼，各称呼共用一张卡。definition 用英文简述身份，context 说明此人与文中事件的关系。ipa 和 french 可为空。不要臆测身份或把有歧义的别称分给多个人。
 
 正文和注释只写纯文本。不要插入颜色、HTML、Markdown 围栏或编号，网站会自动为三类注释配色和编号。`;
 

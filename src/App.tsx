@@ -850,9 +850,6 @@ export default function Home() {
                             {n.definition}
                           </p>
                         )}
-                        <p className="definition" lang="zh">
-                          {n.meaning}
-                        </p>
                         {n.kind === "person" && (
                           <p className="person-aliases">
                             文中称呼：{n.aliases?.join("、")}
