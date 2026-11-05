@@ -96,3 +96,58 @@ test("dotted abbreviations match independently of other cards", () => {
   assert.deepEqual(hits.map(part => part.text), ["M.O.", "M.O."]);
   assert.equal(model.normalize({ body: "I.M.O.", analysis: { notes } }).analysis.notes.length, 0);
 });
+
+
+function personArticle(aliases) {
+  return {
+    body: "John F. Kennedy met JFK.",
+    analysis: {
+      notes: [{ kind: "person", term: "John F. Kennedy", ...aliases }],
+    },
+  };
+}
+
+test("person aliases accept missing, null and single-string legacy values", () => {
+  for (const fields of [{}, { aliases: null }, { aliases: [] }]) {
+    assert.deepEqual(model.normalize(personArticle(fields)).analysis.notes[0].aliases, []);
+  }
+  const article = model.normalize(personArticle({ aliases: " JFK " }));
+  assert.deepEqual(article.analysis.notes[0].aliases, ["JFK"]);
+  assert.deepEqual(
+    model.annotatedParts(article.body, article.analysis.notes)
+      .filter(part => part.index >= 0)
+      .map(part => part.text),
+    ["John F. Kennedy", "JFK"],
+  );
+  assert.deepEqual(
+    model.parseImport(JSON.parse(JSON.stringify(article)))[0].analysis.notes[0].aliases,
+    ["JFK"],
+  );
+});
+
+test("person aliases trim, discard blanks and deduplicate before checking limit", () => {
+  const normalizeAliases = aliases =>
+    model.normalize(personArticle({ aliases })).analysis.notes[0].aliases;
+  assert.deepEqual(normalizeAliases([" JFK ", "", "  ", "JFK"]), ["JFK"]);
+  assert.deepEqual(normalizeAliases(Array(101).fill("JFK")), ["JFK"]);
+  assert.deepEqual(normalizeAliases("Kennedy, John"), ["Kennedy, John"]);
+  const aliases = Array.from({ length: 100 }, (_, i) => `Name ${i}`);
+  assert.equal(normalizeAliases(aliases).length, 100);
+  assert.throws(() => normalizeAliases([...aliases, "Extra"]), /当前 101 项/);
+});
+
+test("invalid alias types report the person and do not invent missing names", () => {
+  for (const aliases of [{ name: "JFK" }, 42, [42], [null]]) {
+    assert.throws(
+      () => model.normalize(personArticle({ aliases })),
+      /人物「John F. Kennedy」/,
+    );
+  }
+  assert.throws(
+    () => model.normalize({ ...personArticle({}), body: "Kennedy spoke." }),
+    /未出现在原文中/,
+  );
+  const prompt = model.generationPrompt("");
+  assert(prompt.includes('"aliases": []'));
+  assert(prompt.includes('"aliases": ["Kennedy"]'));
+});

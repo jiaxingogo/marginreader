@@ -49,14 +49,24 @@ export function normalize(v: any): Article {
           throw Error("不支持的注释类型。");
         let aliases: string[] = [];
         if (person) {
-          if (!Array.isArray(n.aliases) || n.aliases.length > 100)
-            throw Error("人物 aliases 必须为最多 100 项的数组。");
+          // Older/generated files may omit aliases or supply one name as text.
+          // Keep a string intact: commas can be part of a person's name.
+          const rawAliases = n.aliases == null
+            ? []
+            : typeof n.aliases === "string"
+              ? [n.aliases]
+              : n.aliases;
+          if (!Array.isArray(rawAliases))
+            throw Error(`人物「${term}」的 aliases 必须是字符串数组，例如 ["Kennedy", "JFK"]。`);
           aliases = [
             ...new Set<string>(
-              n.aliases.map((x: unknown) => str(x, "人物别称", 300)),
+              rawAliases
+                .map((x: unknown) => str(x, `人物「${term}」的别称`, 300).trim())
+                .filter(Boolean),
             ),
           ];
-          if (aliases.some((x) => !x.trim())) throw Error("人物别称不能为空。");
+          if (aliases.length > 100)
+            throw Error(`人物「${term}」的 aliases 去重后不能超过 100 项（当前 ${aliases.length} 项）。`);
         }
         const original = body + " " + (v.intro || "") + " " + (v.title || "");
         if (
@@ -167,7 +177,7 @@ ${JSON.stringify(sample, null, 2)}
 按原句区分义项。例如，化学中的 “coordination number”（配位数）可标为专业术语；“coordination between teams” 中的 “coordination” 是普通词。政治报道中，“electoral college” 指特定选举制度时可标为专业术语；“hammering” 表示猛烈批评、“pocketbook issues” 表示与个人经济状况相关的议题时，都用普通词卡。
 历史事件名、机构名、政策标题或缩写本身都不足以判为术语。若只是需要补充背景，在普通词卡的 context 中说明即可。难以确定专门义时省略 kind；一篇文章可以没有专业术语。若确属术语，term 取原文中的完整表达，definition 用英文解释其专门含义，context 说明它在本文中的作用，同一术语只建一张卡。
 
-公众人物注释规则：设 kind 为 "person"，以全名作为 term。aliases 列出文中实际出现且能明确指认该人的全名、姓、名、昵称等称呼，各称呼共用一张卡。definition 用英文简述身份，context 说明此人与文中事件的关系。ipa 和 french 可为空。不要臆测身份或把有歧义的别称分给多个人。
+公众人物注释规则：设 kind 为 "person"，以全名作为 term。aliases 必须提供为 JSON 字符串数组，最多 100 项，例如 "aliases": ["Kennedy", "JFK"]；只有一个别称也必须写成数组，例如 "aliases": ["Kennedy"]。没有别称时写 "aliases": []，不要省略字段，不要使用 null、单个字符串、对象或逗号分隔的字符串代替数组。仅列出文中实际出现且能明确指认该人的全名、姓、名、昵称等称呼，去重并排除空字符串，不必重复 term，各称呼共用一张卡。definition 用英文简述身份，context 说明此人与文中事件的关系。ipa 和 french 可为空。不要臆测身份或把有歧义的别称分给多个人。
 
 正文和注释只写纯文本。不要插入颜色、HTML、Markdown 围栏或编号，网站会自动为三类注释配色和编号。`;
 
